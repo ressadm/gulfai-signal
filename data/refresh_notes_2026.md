@@ -1,5 +1,52 @@
 # GulfAI Signal — 2026 Recency-Corrected Refresh: Analyst Notes
 
+**Current Version:** 2.3.0 (combined May 12 + May 19 + May 26 refresh published 2026-05-26)
+**Prior Version:** 2.0.0 (compiled May 6, 2026); v1.0.0 (compiled May 2025)
+**Analyst:** GulfAI Research Team (automated refresh via structured web research)
+
+---
+
+## v2.3.0 — Combined 2026-05-26 refresh
+
+This release merges three pending packages into the live app: May 12 commercial/governance, May 19 startups/funding, and the May 26 operational-deployment package.
+
+### Live additions (May 26 package)
+
+- **Saudi Arabia — Qiddiya / Google Cloud AI operating layer** for construction, visitor analytics, Gemini agents, and Q-Brain decision support across the Riyadh entertainment district (Semafor, May 20). Project scope at least SAR 20B (~USD 5.3B). High credibility; mega-project AI reference pattern.
+- **Saudi Arabia — Aramco / Pasqal QCaaS** active in Dhahran. Middle East's first commercial Quantum-Computing-as-a-Service platform. 200-qubit neutral-atom QPU; cloud access for industrial optimization, simulation, AI workloads, energy/materials, logistics, CO2 storage, supply chain, well placement, rig scheduling, reservoir optimization. Initial deployment Nov 2025; active operation formalized May 2026.
+- **Saudi Arabia — SDAIA Hajj 1447 / 2026** operational AI: 75 sites, ~14 sorting/security-control sites, services in 10 countries through 17 international ports, AI-enabled mobile checks ≤40 seconds, Tawakkalna in 19 languages.
+- **UAE — first wave of operational government AI agents** (procurement, tax audit, customer happiness, technical support). ~80,000 government workers slated for training; 400+ officials involved.
+- **GCC — Rockwell State of Smart Manufacturing 2026** survey: 98% of Middle East manufacturers cite digital transformation as essential; ~30% of opex on industrial tech; AI/ML cited as top-ROI technology.
+- **GCC — Korn Ferry scaling-readiness survey:** >90% adoption in some form; 49% piloting; 28% exploration; only 1% fully equipped to scale. Barriers: tech integration (61%), talent (44%), ROI (37%).
+- **UAE — TFSF Ventures** 52-agent / 21-vertical claim added as a low-medium-credibility weak signal pending independent customer/adoption proof.
+
+### Live additions carried forward (May 12 + May 19 packages)
+
+- Saudi — Aramco / solutions by stc $372.5M upstream supercomputing (~7x current upstream compute; delivery early 2027).
+- UAE — Dubai two-year private-sector Agentic AI transformation programme (Dubai Chamber business-council training; agentic-AI incubators and funds).
+- UAE — MIITE 2026 industrial AI policy linking AI-driven production to procurement localization, the National Industrial Resilience Fund, and an IBM / UAE Cyber Security Council trusted-AI innovation center.
+- Saudi — AWS / HUMAIN reframed as full-stack enterprise AI ecosystem (Humain One, AI Zone, Marketplace/channels, SageMaker, Bedrock, Amazon Q, UltraClusters).
+- Saudi — SDAIA Deepfake Guidelines (SDAIA-P119) re-entered live commercial-compliance status.
+- Saudi/MENA — Aumet $12M Series A (Emkan Capital, Qatar Development Bank, SABAH Fund, AAIC, Shorooq, Right Side Capital, Cigalah, Salehiya). AI-first healthcare procurement OS (~$1B GMV, 12,000+ pharmacies).
+- UAE — Lyrie.ai $2M pre-seed for Agent Trust Protocol / AI-agent security infrastructure.
+- Saudi — Gabster $500K pre-seed for SMB AI operations platform (Riyadh Angel Investors / Roqan Al Rajhi Investment, T2).
+- Qatar — HASIF investment via Snoonu Startup Factory Initiative; AI-powered SME accounting/compliance.
+- GCC — AI-enabled service bundling weak signal (telco, banking, healthcare, SaaS).
+
+### Recency / discipline
+
+- 2026-current discipline maintained. 2025-only items stay in historical baseline unless reactivated by a 2026 milestone.
+- Aramco/Pasqal initial deployment occurred in Nov 2025 but is included as 2026-current because active operation was formalized in May 2026.
+- TFSF Ventures kept on watchlist (low-medium credibility) until customer references or independent adoption proof emerges.
+
+### Sources added in v2.3.0
+
+Semafor; The Quantum Insider; Asharq Al-Awsat (Hajj AI); The National (UAE AI agents); PR Newswire (Rockwell); Consultancy-me (Korn Ferry); Nat Law Review (TFSF press release); Lucidity Insights, Arab News (Aumet, HASIF, deepfake guidelines); GlobeNewswire (Lyrie.ai); Arageek, SaaSNews (Gabster); MIT Sloan Middle East (Aramco/stc, Dubai agentic-AI, MIITE, AWS-HUMAIN); Gulf News (Dubai programme); Scene Now and istitlaa.ncc.gov.sa (deepfake guidelines); Middle East Briefing (AI service bundling).
+
+---
+
+## v2.0.0 — 2026 recency-corrected refresh
+
 **Version:** 2.0.0
 **Analysis Date:** May 6, 2026
 **Prior Version:** 1.0.0 (compiled May 2025)
@@ -257,5 +304,5 @@ The existing categories (`weekly_brief`, `market_metrics`, `commercial_adoption`
 
 ---
 
-*GulfAI Analyst Notes v2.0.0 — For app integration. All source URLs embedded in companion JSON dataset at `/home/user/workspace/gulfai_2026_refresh_dataset.json`.*
+*GulfAI Analyst Notes — For app integration. All source URLs embedded in the companion JSON dataset (`data/current.json`) and dated archive snapshots (`data/archive/`).*
 *Analysis date: May 6, 2026. Next recommended refresh: August 2026 (post-Stargate UAE 200MW launch, post-SDAIA final Responsible AI Policy, post-HUMAIN Riyadh/Dammam Q2 confirmation).*
