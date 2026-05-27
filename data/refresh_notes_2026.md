@@ -1,8 +1,14 @@
 # GulfAI Signal — 2026 Recency-Corrected Refresh: Analyst Notes
 
-**Current Version:** 2.3.2 (live-verification patch over v2.3.1, published 2026-05-27)
+**Current Version:** 2.3.2 (live-verification + metadata alignment, published 2026-05-27)
 **Prior Versions:** 2.3.1 (data-quality hardening, 2026-05-27); 2.3.0 (combined May 12 + May 19 + May 26 refresh, 2026-05-26); 2.0.0 (compiled May 6, 2026); v1.0.0 (compiled May 2025)
 **Analyst:** GulfAI Research Team (automated refresh via structured web research)
+
+---
+
+## v2.3.2 — Metadata alignment patch (2026-05-27, follow-up)
+
+Live verification confirmed the data-quality fixes were present but found `_meta.version` still reported `2.3.1` because the prior repair run's version-bump block was gated on a guard that didn't fire on a re-run. Fixed: `_meta.version` and `_meta.last_quality_pass` are now stamped authoritatively by the repair script on every run, so they always reflect the configured release version. Both `data/current.json` and `data/archive/2026-05-26.json` now report `_meta.version: "2.3.2"`, `_meta.last_quality_pass: "2026-05-27"`. No intelligence content changed.
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "GulfAI Signal — 2026-05-26 Combined Refresh Dataset",
-    "version": "2.3.1",
+    "version": "2.3.2",
     "compiled_date": "2026-05-26",
     "scope": "Saudi Arabia (primary), UAE (primary), Qatar, Oman, Bahrain, Kuwait; broader MENA for regionally significant signals",
     "coverage_period": "2026 current + late-2025 items with active 2026 continuation; through May 26, 2026",
@@ -34,7 +34,7 @@
       "remove_from_live",
       "downgrade_credibility"
     ],
-    "prior_version": "2.0.0 (2026-05-06)",
+    "prior_version": "2.3.1 (2026-05-27)",
     "analysis_date": "2026-05-26",
     "recency_policy": "All weekly brief entries must have a verified 2026 update or implementation milestone. Items marked stale-review require re-verification before live use. Late-2025 items included only where 2026 execution, deployment, regulatory effect, or funding close is confirmed. May 26 combined refresh prioritizes operational-deployment signals (Qiddiya, Aramco/Pasqal QCaaS, SDAIA Hajj, UAE first government AI agents) alongside merged May 12 commercial/governance and May 19 startup-funding packages.",
     "credibility_legend": {
@@ -2421,6 +2421,16 @@
       "date": "2026-05-27",
       "action": "v2.3.1 -> v2.3.2: live-verification patch",
       "summary": "Restored two mid-word truncations: commercial_adoption/ca2026_005.business_impact (previously cut mid-word at a two-letter fragment after 'This') from description, and infrastructure_compute/ic2026_003.gpu_systems (previously cut mid-word at the partial token 'qua') replaced with the full phrase 'NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer'. Tightened validator: mid-word truncations and trailing whitespace after a letter are now hard failures (previously warnings); explicit deny list added for the specific bad trailing strings observed in live data; tightened source URL requirement to all non-historical records (not just high-credibility ones); excluded URL fields from the mid-word heuristic to prevent false positives on '.html' / '.pdf' / 'ai' path endings. Resynced data/archive/2026-05-26.json.",
+      "sources_count": 0,
+      "primary_gaps": [],
+      "items_archived": []
+    },
+    {
+      "id": "acb_006",
+      "version": "2.3.2",
+      "date": "2026-05-27",
+      "action": "v2.3.2 metadata alignment patch",
+      "summary": "Live verification noticed that _meta.version still reported the prior release (2.3.1) even though the v2.3.2 patch had landed in the dataset. Root cause: the repair script's version-bump block was gated on a no-op guard that fired when a second run had no other repair to make. Made the version stamp authoritative and idempotent — repair now always sets _meta.version to the configured TARGET_VERSION regardless of other changes. No intelligence content modified. _meta.last_quality_pass remains 2026-05-27.",
       "sources_count": 0,
       "primary_gaps": [],
       "items_archived": []

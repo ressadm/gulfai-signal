@@ -53,12 +53,19 @@ def repair(data: dict) -> tuple[dict, list[str]]:
     # 1b. infrastructure_compute/ic2026_003: gpu_systems was cut at "Pasqal qua".
     # The complete phrase lives in `strategic_significance`. Set the
     # gpu_systems field to a clean, factual summary derived from that
-    # narrative (no new content).
+    # narrative (no new content). Only fire when the field is actually
+    # truncated — i.e. ends with "qua" *as a complete word* (not as a prefix
+    # of "quantum") — so re-running on a fixed file is a no-op.
     ic3 = _find(data.get("infrastructure_compute", []), "ic2026_003")
     if ic3:
-        gs = ic3.get("gpu_systems", "") or ""
-        if gs.rstrip().endswith(("qua", "Pasqal qua")) or "Pasqal qua" in gs:
-            ic3["gpu_systems"] = "NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer"
+        gs = (ic3.get("gpu_systems", "") or "").rstrip()
+        target = "NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer"
+        # Truncated form ends with the 3-letter token "qua" with nothing
+        # after it. Use a regex with a right word-boundary so "quantum"
+        # never matches.
+        import re as _re
+        if _re.search(r"Pasqal qua(?![A-Za-z])", gs) and gs != target:
+            ic3["gpu_systems"] = target
             changes.append("infrastructure_compute/ic2026_003: gpu_systems mid-word truncation fixed")
 
     # 2. global_players key_deals[0] truncations — restore from description.
@@ -174,20 +181,27 @@ def repair(data: dict) -> tuple[dict, list[str]]:
         }
         changes.append("_meta.recency_bucket_legend added")
 
-    # 7. Bump version metadata if anything changed. The version bumps
-    # forward only — re-running on an already-v2.3.2 file is a no-op for
-    # this block.
-    if changes:
-        prior = meta.get("version", "2.3.0")
-        target = "2.3.2"
-        if prior != target:
-            meta["version"] = target
-            meta["compiled_date"] = meta.get("compiled_date", "2026-05-26")
-            meta["last_quality_pass"] = "2026-05-27"
-            # Track lineage in prior_version: "<old> (<old_date>)".
-            old_pass = meta.get("last_quality_pass", "2026-05-27")
-            meta["prior_version"] = f"{prior} ({old_pass})"
-            changes.append(f"_meta.version {prior} -> {target}; last_quality_pass=2026-05-27")
+    # 7. Stamp version metadata authoritatively. This runs unconditionally
+    # so the file always reflects the current published version, even if no
+    # other repair was needed (avoids the bug where a manual re-run with no
+    # diffs left `_meta.version` stuck at the previous value).
+    TARGET_VERSION = "2.3.2"
+    TARGET_LAST_QUALITY_PASS = "2026-05-27"
+    prior = meta.get("version", "2.3.0")
+    if prior != TARGET_VERSION:
+        meta["version"] = TARGET_VERSION
+        meta["compiled_date"] = meta.get("compiled_date", "2026-05-26")
+        meta["last_quality_pass"] = TARGET_LAST_QUALITY_PASS
+        # Track lineage in prior_version: "<old> (<old_date>)".
+        old_pass = meta.get("last_quality_pass", TARGET_LAST_QUALITY_PASS)
+        meta["prior_version"] = f"{prior} ({old_pass})"
+        changes.append(f"_meta.version {prior} -> {TARGET_VERSION}; last_quality_pass={TARGET_LAST_QUALITY_PASS}")
+    else:
+        # Idempotent: even on a v2.3.2 file, make sure last_quality_pass
+        # is the configured value.
+        if meta.get("last_quality_pass") != TARGET_LAST_QUALITY_PASS:
+            meta["last_quality_pass"] = TARGET_LAST_QUALITY_PASS
+            changes.append(f"_meta.last_quality_pass -> {TARGET_LAST_QUALITY_PASS}")
 
     return data, changes
 
