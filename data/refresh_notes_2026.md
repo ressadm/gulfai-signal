@@ -1,8 +1,28 @@
 # GulfAI Signal — 2026 Recency-Corrected Refresh: Analyst Notes
 
-**Current Version:** 2.3.1 (data-quality hardening pass over the 2026-05-26 release, published 2026-05-27)
-**Prior Versions:** 2.3.0 (combined May 12 + May 19 + May 26 refresh, 2026-05-26); 2.0.0 (compiled May 6, 2026); v1.0.0 (compiled May 2025)
+**Current Version:** 2.3.2 (live-verification patch over v2.3.1, published 2026-05-27)
+**Prior Versions:** 2.3.1 (data-quality hardening, 2026-05-27); 2.3.0 (combined May 12 + May 19 + May 26 refresh, 2026-05-26); 2.0.0 (compiled May 6, 2026); v1.0.0 (compiled May 2025)
 **Analyst:** GulfAI Research Team (automated refresh via structured web research)
+
+---
+
+## v2.3.2 — Live-verification patch (2026-05-27)
+
+Second pass after a live fetch of `data/current.json` and the 2026-05-26 archive revealed two truncations that escaped the v2.3.1 detector:
+
+- **`commercial_adoption/ca2026_005.business_impact`** ended at "This p" (mid-word cut just after "Bessemer."). The full text was already in `description` / `why_it_matters`; copied across.
+- **`infrastructure_compute/ic2026_003.gpu_systems`** ended at "Pasqal qua". Replaced with the clean phrase "NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer", which is the wording used in the record's own `strategic_significance` field.
+
+Validator tightened so these and similar regressions are caught automatically going forward:
+
+- Mid-word truncations (last token is a 1–3-char fragment that isn't a legitimate trailing word, after at least one preceding period) are now **hard failures**, not warnings.
+- Trailing whitespace after a letter is a **hard failure**.
+- Explicit deny list of bad trailing fragments — every literal mid-word cut we've seen in the live data is asserted against directly.
+- URL fields are excluded from the mid-word heuristic (no more false positives on `.html`, `.pdf`, or `ai`-ending paths).
+- Source URL is now required on **all non-historical records**, not just high-credibility ones. Historical (`historical: true` or `recency_bucket: historical-context`) and `archive_changelog_baseline` rows remain exempt.
+- New `scripts/assert_no_bad_fragments.py`: a tight, narrow assertion that runs alongside the full validator under `npm test`. Checks both `data/current.json` and `data/archive/2026-05-26.json` for the exact banned strings and for duplicate IDs.
+
+`_legacy` items re-confirmed to carry `historical: true` and a non-current `recency_bucket` (either `historical-context` or `late-2025-active`). Em-dash placeholders in `vendor_partner` / `investment_amount` / `budget` are intentional schema convention for "not applicable / undisclosed" and were left untouched.
 
 ---
 

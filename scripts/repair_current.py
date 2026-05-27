@@ -38,6 +38,7 @@ def repair(data: dict) -> tuple[dict, list[str]]:
         ("commercial_adoption", "ca2026_001", "business_impact", "description"),
         ("commercial_adoption", "ca2026_002", "business_impact", "description"),
         ("commercial_adoption", "ca2026_003", "business_impact", "description"),
+        ("commercial_adoption", "ca2026_005", "business_impact", "description"),
     ]
     for section, iid, target, source in truncated_pairs:
         item = _find(data.get(section, []), iid)
@@ -48,6 +49,17 @@ def repair(data: dict) -> tuple[dict, list[str]]:
         if src and len(src) > len(cur) + 5 and not cur.rstrip().endswith((".", "!", "?")):
             item[target] = src
             changes.append(f"{section}/{iid}: {target} restored from {source}")
+
+    # 1b. infrastructure_compute/ic2026_003: gpu_systems was cut at "Pasqal qua".
+    # The complete phrase lives in `strategic_significance`. Set the
+    # gpu_systems field to a clean, factual summary derived from that
+    # narrative (no new content).
+    ic3 = _find(data.get("infrastructure_compute", []), "ic2026_003")
+    if ic3:
+        gs = ic3.get("gpu_systems", "") or ""
+        if gs.rstrip().endswith(("qua", "Pasqal qua")) or "Pasqal qua" in gs:
+            ic3["gpu_systems"] = "NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer"
+            changes.append("infrastructure_compute/ic2026_003: gpu_systems mid-word truncation fixed")
 
     # 2. global_players key_deals[0] truncations — restore from description.
     for iid in (
@@ -162,13 +174,20 @@ def repair(data: dict) -> tuple[dict, list[str]]:
         }
         changes.append("_meta.recency_bucket_legend added")
 
-    # 7. Bump version metadata if anything changed.
+    # 7. Bump version metadata if anything changed. The version bumps
+    # forward only — re-running on an already-v2.3.2 file is a no-op for
+    # this block.
     if changes:
-        meta["version"] = "2.3.1"
-        meta["compiled_date"] = meta.get("compiled_date", "2026-05-26")
-        meta["last_quality_pass"] = "2026-05-27"
-        meta["prior_version"] = meta.get("prior_version", "2.0.0 (2026-05-06)")
-        changes.append("_meta.version -> 2.3.1; last_quality_pass=2026-05-27")
+        prior = meta.get("version", "2.3.0")
+        target = "2.3.2"
+        if prior != target:
+            meta["version"] = target
+            meta["compiled_date"] = meta.get("compiled_date", "2026-05-26")
+            meta["last_quality_pass"] = "2026-05-27"
+            # Track lineage in prior_version: "<old> (<old_date>)".
+            old_pass = meta.get("last_quality_pass", "2026-05-27")
+            meta["prior_version"] = f"{prior} ({old_pass})"
+            changes.append(f"_meta.version {prior} -> {target}; last_quality_pass=2026-05-27")
 
     return data, changes
 

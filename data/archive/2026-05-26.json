@@ -612,7 +612,7 @@
       "ai_use_case": "AppliedAI closes pre-Series B; Mubadala MENA VC Fund leads",
       "vendor_partner": "—",
       "deployment_stage": "Active deployment",
-      "business_impact": "AppliedAI (Abu Dhabi-based, AI-native workflows for regulated industries) closed a pre-Series B funding round led by Mubadala's MENA Venture Capital Fund and Arbor Ventures (January 22, 2026). Amount undisclosed. Platform 'Opus' targeted for global expansion and deeper enterprise deployments. AppliedAI's prior Series A ($55M, $300M valuation, Feb 2025) was backed by G42, Palantir, Bessemer. This p",
+      "business_impact": "AppliedAI (Abu Dhabi-based, AI-native workflows for regulated industries) closed a pre-Series B funding round led by Mubadala's MENA Venture Capital Fund and Arbor Ventures (January 22, 2026). Amount undisclosed. Platform 'Opus' targeted for global expansion and deeper enterprise deployments. AppliedAI's prior Series A ($55M, $300M valuation, Feb 2025) was backed by G42, Palantir, Bessemer. This pre-Series B rounds makes AppliedAI Abu Dhabi's clearest private-sector AI champion heading into 2026.",
       "credibility_score": "High",
       "why_it_matters": "AppliedAI (Abu Dhabi-based, AI-native workflows for regulated industries) closed a pre-Series B funding round led by Mubadala's MENA Venture Capital Fund and Arbor Ventures (January 22, 2026). Amount undisclosed. Platform 'Opus' targeted for global expansion and deeper enterprise deployments. AppliedAI's prior Series A ($55M, $300M valuation, Feb 2025) was backed by G42, Palantir, Bessemer. This pre-Series B rounds makes AppliedAI Abu Dhabi's clearest private-sector AI champion heading into 2026.",
       "source_urls": [
@@ -1644,7 +1644,7 @@
       "type": "Datacenter",
       "capacity": "480MW",
       "area": "",
-      "gpu_systems": "GPU-powered AI supercomputer and Pasqal qua",
+      "gpu_systems": "NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer",
       "operators": [
         "SDAIA"
       ],
@@ -2411,6 +2411,16 @@
       "date": "2026-05-27",
       "action": "v2.3.0 → v2.3.1: data-quality hardening pass (no new intelligence)",
       "summary": "Restored five truncated business_impact / key_deals fields from sibling description fields; deduplicated archive_changelog_baseline IDs (acb_001 collision); added historical=true flag to _legacy items; rewrote strategic_insights/si2026_003.implications as bullets; documented credibility_legend and recency_bucket_legend in _meta; trimmed trailing whitespace globally; added npm validate / repair tooling; resynced 2026-05-26 archive snapshot to match the fixed dataset.",
+      "sources_count": 0,
+      "primary_gaps": [],
+      "items_archived": []
+    },
+    {
+      "id": "acb_005",
+      "version": "2.3.2",
+      "date": "2026-05-27",
+      "action": "v2.3.1 -> v2.3.2: live-verification patch",
+      "summary": "Restored two mid-word truncations: commercial_adoption/ca2026_005.business_impact (previously cut mid-word at a two-letter fragment after 'This') from description, and infrastructure_compute/ic2026_003.gpu_systems (previously cut mid-word at the partial token 'qua') replaced with the full phrase 'NVIDIA GPU-powered AI supercomputer and Pasqal quantum computer'. Tightened validator: mid-word truncations and trailing whitespace after a letter are now hard failures (previously warnings); explicit deny list added for the specific bad trailing strings observed in live data; tightened source URL requirement to all non-historical records (not just high-credibility ones); excluded URL fields from the mid-word heuristic to prevent false positives on '.html' / '.pdf' / 'ai' path endings. Resynced data/archive/2026-05-26.json.",
       "sources_count": 0,
       "primary_gaps": [],
       "items_archived": []
