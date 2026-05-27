@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "GulfAI Signal — 2026-05-26 Combined Refresh Dataset",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "compiled_date": "2026-05-26",
     "scope": "Saudi Arabia (primary), UAE (primary), Qatar, Oman, Bahrain, Kuwait; broader MENA for regionally significant signals",
     "coverage_period": "2026 current + late-2025 items with active 2026 continuation; through May 26, 2026",
@@ -36,7 +36,21 @@
     ],
     "prior_version": "2.0.0 (2026-05-06)",
     "analysis_date": "2026-05-26",
-    "recency_policy": "All weekly brief entries must have a verified 2026 update or implementation milestone. Items marked stale-review require re-verification before live use. Late-2025 items included only where 2026 execution, deployment, regulatory effect, or funding close is confirmed. May 26 combined refresh prioritizes operational-deployment signals (Qiddiya, Aramco/Pasqal QCaaS, SDAIA Hajj, UAE first government AI agents) alongside merged May 12 commercial/governance and May 19 startup-funding packages."
+    "recency_policy": "All weekly brief entries must have a verified 2026 update or implementation milestone. Items marked stale-review require re-verification before live use. Late-2025 items included only where 2026 execution, deployment, regulatory effect, or funding close is confirmed. May 26 combined refresh prioritizes operational-deployment signals (Qiddiya, Aramco/Pasqal QCaaS, SDAIA Hajj, UAE first government AI agents) alongside merged May 12 commercial/governance and May 19 startup-funding packages.",
+    "credibility_legend": {
+      "High": "Primary source: official company / government press release, regulator filing, or a tier-1 outlet (Reuters, Bloomberg, CNBC, NYT, FT, Arab News, The National) with first-party confirmation.",
+      "Medium-High": "Reputable secondary source (industry trade press, MIT Sloan ME, Wamda, Magnitt, Lucidity Insights) corroborated by at least one primary indicator or a second secondary source.",
+      "Medium": "Single secondary source with limited corroboration. Use with directional confidence; verify before acting commercially.",
+      "Low-Medium": "Press-release distribution (PR Newswire, EIN Presswire, GlobeNewswire) or vendor-self-reported claims without independent verification. Treat as weak signal.",
+      "Low": "Rumor, unsourced trade chatter, or single anonymous reference. Watchlist only."
+    },
+    "recency_bucket_legend": {
+      "2026-current": "Verified 2026 event, deployment, regulatory effect, or funding close.",
+      "late-2025-active": "Late-2025 item with active 2026 continuation or first-quarter milestone.",
+      "historical-context": "Pre-2026 or superseded item kept for baseline / change tracking.",
+      "stale-review": "Item flagged for analyst re-verification before live use."
+    },
+    "last_quality_pass": "2026-05-27"
   },
   "weekly_brief": [
     {
@@ -488,7 +502,8 @@
       "source_url": "https://www.arabnews.com/node/2627661/business-economy",
       "notes": "2024 figure; 2026 update not yet published as of May 2026. ICT: 52.8%, Finance/Insurance: 44.7%. Use as historical baseline until GASTAT publishes 2025 survey.",
       "recency_bucket": "historical-context",
-      "recommended_action": "move_to_historical"
+      "recommended_action": "move_to_historical",
+      "historical": true
     },
     {
       "id": "mm2026_008_legacy",
@@ -501,7 +516,8 @@
       "source_url": "https://blogs.microsoft.com/on-the-issues/2025/11/03/microsofts-15-2-billion-usd-investment-in-the-uae/",
       "notes": "Late-2025 figure from Microsoft announcement. Likely higher in 2026 given Agentic AI government rollout and UAE nationwide ChatGPT. No 2026 verified update as of compilation date.",
       "recency_bucket": "late-2025-active",
-      "recommended_action": "update_with_2026_source"
+      "recommended_action": "update_with_2026_source",
+      "historical": true
     }
   ],
   "commercial_adoption": [
@@ -513,7 +529,7 @@
       "ai_use_case": "aramcoMETABRAIN LLM and Digital Engineer AI avatar in production; Azure MoU signed",
       "vendor_partner": "—",
       "deployment_stage": "Active deployment",
-      "business_impact": "At CERAWeek 2026 (April), Aramco showcased: (1) aramcoMETABRAIN — industrial LLM trained on 90+ years of corporate operational data; (2) Digital Engineer — AI expert avatar for real-time troubleshooting; (3) one of the region's first NVIDIA GPU-powered AI supercomputers; (4) the region's first Pasqal quantum computer for optimization and cybersecurity research. Separately in February 2026, Aramco ",
+      "business_impact": "At CERAWeek 2026 (April), Aramco showcased: (1) aramcoMETABRAIN — industrial LLM trained on 90+ years of corporate operational data; (2) Digital Engineer — AI expert avatar for real-time troubleshooting; (3) one of the region's first NVIDIA GPU-powered AI supercomputers; (4) the region's first Pasqal quantum computer for optimization and cybersecurity research. Separately in February 2026, Aramco signed a non-binding MoU with Microsoft to explore digital initiatives: digital sovereignty/data residency, operational efficiency, industry alliance for AI adoption across Saudi industrial value chain, and co-innovation of industrial AI IP. Mahdi Aladel confirmed AI constitutes the largest segment of Aramco's tech investment portfolio.",
       "credibility_score": "High",
       "why_it_matters": "At CERAWeek 2026 (April), Aramco showcased: (1) aramcoMETABRAIN — industrial LLM trained on 90+ years of corporate operational data; (2) Digital Engineer — AI expert avatar for real-time troubleshooting; (3) one of the region's first NVIDIA GPU-powered AI supercomputers; (4) the region's first Pasqal quantum computer for optimization and cybersecurity research. Separately in February 2026, Aramco signed a non-binding MoU with Microsoft to explore digital initiatives: digital sovereignty/data residency, operational efficiency, industry alliance for AI adoption across Saudi industrial value chain, and co-innovation of industrial AI IP. Mahdi Aladel confirmed AI constitutes the largest segment of Aramco's tech investment portfolio.",
       "source_urls": [
@@ -534,7 +550,7 @@
       "ai_use_case": "World's first AI-native airline launches commercial service early 2026",
       "vendor_partner": "—",
       "deployment_stage": "Production rollout",
-      "business_impact": "Riyadh Air (PIF-owned) launched its first commercial service in early 2026, operationalizing its IBM watsonx Orchestrate-based AI-native architecture announced at IBM Think Riyadh (December 2025). 59 workstreams, 60+ technology partners (Adobe, Apple, FLYR, Microsoft). AI applications: agentic AI concierge for crews, personalized digital workplace for HR, enterprise performance management (automat",
+      "business_impact": "Riyadh Air (PIF-owned) launched its first commercial service in early 2026, operationalizing its IBM watsonx Orchestrate-based AI-native architecture announced at IBM Think Riyadh (December 2025). 59 workstreams, 60+ technology partners (Adobe, Apple, FLYR, Microsoft). AI applications: agentic AI concierge for crews, personalized digital workplace for HR, enterprise performance management (automated budgeting/forecasting, real-time route profitability), crew mobile tools with real-time passenger context. Doubling its workforce in 2026. Target: 100+ destinations and millions of travelers by 2030.",
       "credibility_score": "High",
       "why_it_matters": "Riyadh Air (PIF-owned) launched its first commercial service in early 2026, operationalizing its IBM watsonx Orchestrate-based AI-native architecture announced at IBM Think Riyadh (December 2025). 59 workstreams, 60+ technology partners (Adobe, Apple, FLYR, Microsoft). AI applications: agentic AI concierge for crews, personalized digital workplace for HR, enterprise performance management (automated budgeting/forecasting, real-time route profitability), crew mobile tools with real-time passenger context. Doubling its workforce in 2026. Target: 100+ destinations and millions of travelers by 2030.",
       "source_urls": [
@@ -554,7 +570,7 @@
       "ai_use_case": "UAE banks reach AI tipping point; CBUAE issues mandatory AI/ML governance guidance",
       "vendor_partner": "—",
       "deployment_stage": "Active deployment",
-      "business_impact": "Finastra research (February 2026) confirmed UAE financial institutions have reached an AI tipping point, moving from experimentation to execution. SAP/YouGov survey (May 2026): 81% of UAE IT decision-makers say AI initiatives are meeting or exceeding expectations; 46% report enterprise-wide AI adoption. Central Bank of UAE (CBUAE) issued Guidance Note in February 2026 on responsible AI/ML use by l",
+      "business_impact": "Finastra research (February 2026) confirmed UAE financial institutions have reached an AI tipping point, moving from experimentation to execution. SAP/YouGov survey (May 2026): 81% of UAE IT decision-makers say AI initiatives are meeting or exceeding expectations; 46% report enterprise-wide AI adoption. Central Bank of UAE (CBUAE) issued Guidance Note in February 2026 on responsible AI/ML use by licensed financial institutions — mandatory framework covering consumer protection, model risk, oversight requirements, and explainability. Dubai AI Week 2026 (April 6–9) featured financial services AI regulation as lead topic.",
       "credibility_score": "High",
       "why_it_matters": "Finastra research (February 2026) confirmed UAE financial institutions have reached an AI tipping point, moving from experimentation to execution. SAP/YouGov survey (May 2026): 81% of UAE IT decision-makers say AI initiatives are meeting or exceeding expectations; 46% report enterprise-wide AI adoption. Central Bank of UAE (CBUAE) issued Guidance Note in February 2026 on responsible AI/ML use by licensed financial institutions — mandatory framework covering consumer protection, model risk, oversight requirements, and explainability. Dubai AI Week 2026 (April 6–9) featured financial services AI regulation as lead topic.",
       "source_urls": [
@@ -644,7 +660,8 @@
       "description": "World's largest industrial 5G-AI network (11,000 sq km, ADNOC partnership). This was a 2024/2025 deployment milestone. No material new 2026 update found in research. Remains operationally active but is no longer a 'current' news item.",
       "event_date": "2024-01-01",
       "recency_bucket": "historical-context",
-      "recommended_action": "move_to_historical"
+      "recommended_action": "move_to_historical",
+      "historical": true
     },
     {
       "company": "Qiddiya / Google Cloud",
@@ -781,10 +798,10 @@
       "type_of_move": [
         "Tier 1"
       ],
-      "investment_amount": "$15.2B ",
+      "investment_amount": "$15.2B",
       "strategic_intent": "Saudi Azure region confirmed Q4 2026; 3M AI skills target; ADNOC and Aramco agreements active",
       "key_deals": [
-        "Microsoft 2026 GCC activity: (1) Saudi Arabia East datacenter region confirmed for Q4 2026 customer access — three availability zones, Eastern Province (announced Feb 2026). (2) 3 million Saudi AI skills target by 2030; 800K+ already traine…"
+        "Microsoft 2026 GCC activity: (1) Saudi Arabia East datacenter region confirmed for Q4 2026 customer access — three availability zones, Eastern Province (announced Feb 2026). (2) 3 million Saudi AI skills target by 2030; 800K+ already trained; AI Tour Riyadh event (Feb 2026). (3) ADNOC-Masdar-XRG partnership for AI agent deployment across ADNOC value chain (active 2026 execution). (4) Aramco MoU (Feb 2026) covering digital sovereignty, operational efficiency, industrial AI co-innovation. UAE commitments ($15.2B 2023–2029) on track; Microsoft Global Engineering Development Center in Abu Dhabi advancing. G42 equity stake remains."
       ],
       "source_urls": [
         "https://news.microsoft.com/source/emea/2026/02/microsoft-confirms-saudi-arabia-datacenter-region-available-for-customers-to-run-cloud-workloads-from-q4-2026/",
@@ -811,7 +828,7 @@
       "investment_amount": "1.9GW",
       "strategic_intent": "First GPU shipment to HUMAIN (Jan 2026); Stargate UAE mechanical systems delivered",
       "key_deals": [
-        "NVIDIA's 2026 GCC milestones: (1) First GB300 GPU shipment delivered to HUMAIN, January 2026 — converting the 600,000-GPU partnership to physical delivery; (2) Stargate UAE: first mechanical system deliveries on site (Q2 2026 construction u…"
+        "NVIDIA's 2026 GCC milestones: (1) First GB300 GPU shipment delivered to HUMAIN, January 2026 — converting the 600,000-GPU partnership to physical delivery; (2) Stargate UAE: first mechanical system deliveries on site (Q2 2026 construction update); (3) HUMAIN's 1.9GW/2030 target (via NVIDIA platforms) is the backbone of Saudi compute strategy; (4) Hexagon Saudi datacenter (SDAIA) uses NVIDIA GPU-powered AI supercomputer infrastructure. NVIDIA remains the indispensable semiconductor layer for all GCC sovereign AI initiatives."
       ],
       "source_urls": [
         "https://www.samenacouncil.org/samena_daily_news?news=108917"
@@ -837,7 +854,7 @@
       "investment_amount": "$50B",
       "strategic_intent": "Altman meets Gulf SWFs for $50B+ round; Stargate UAE on track; UAE nationwide ChatGPT rolling out",
       "key_deals": [
-        "OpenAI's 2026 Gulf activities: (1) Sam Altman visited UAE in January 2026 to meet Abu Dhabi state-backed funds for $50B+ funding round (Bloomberg, CNBC, Jan 21); round expected to close Q1 2026. (2) Stargate UAE first phase on track for Q3 …"
+        "OpenAI's 2026 Gulf activities: (1) Sam Altman visited UAE in January 2026 to meet Abu Dhabi state-backed funds for $50B+ funding round (Bloomberg, CNBC, Jan 21); round expected to close Q1 2026. (2) Stargate UAE first phase on track for Q3 2026 delivery (200MW live). (3) UAE nationwide ChatGPT access initiative advancing — OpenAI's first country-level deployment agreement. MGX is a confirmed participant in Anthropic's $30B round; Altman's Middle East relationship continues to deepen."
       ],
       "source_urls": [
         "https://www.cnbc.com/2026/01/21/openai-seek-investments-from-middle-east-for-multibillion-dollar-round.html",
@@ -862,10 +879,10 @@
       "type_of_move": [
         "Tier 1"
       ],
-      "investment_amount": "$5.3B ",
+      "investment_amount": "$5.3B",
       "strategic_intent": "HUMAIN AI Zone advancing; AWS UAE/Bahrain facilities targeted in Iran conflict; operations continuing",
       "key_deals": [
-        "AWS's 2026 Gulf situation: (1) HUMAIN AI Zone (150,000 NVIDIA GPUs managed by AWS in Riyadh) advancing per HUMAIN GPU delivery confirmation; (2) AWS UAE and Bahrain facilities experienced outages from Iranian retaliatory strikes (late Febru…"
+        "AWS's 2026 Gulf situation: (1) HUMAIN AI Zone (150,000 NVIDIA GPUs managed by AWS in Riyadh) advancing per HUMAIN GPU delivery confirmation; (2) AWS UAE and Bahrain facilities experienced outages from Iranian retaliatory strikes (late February/March 2026); operations restored but security posture reassessed; (3) $5.3B Saudi region and $5B+ HUMAIN AI Zone commitments remain active despite conflict. AWS declined to comment on impact per CNBC. Bahrain region (2019) remains AWS's most established Gulf presence."
       ],
       "source_urls": [
         "https://www.cnbc.com/2026/03/11/iran-war-hyperscalers-huge-middle-east-ai-data-center-plans.html"
@@ -888,10 +905,10 @@
       "type_of_move": [
         "Tier 1"
       ],
-      "investment_amount": "$1B ",
+      "investment_amount": "$1B",
       "strategic_intent": "G42 'agent factory', Vietnam $1B deal, 100 trillion token/day compute center; global expansion accelerating",
       "key_deals": [
-        "G42's 2026 milestones: (1) Announced 'agent factory' to manage self-running AI systems (Feb 2026); (2) Signed $1B Vietnam framework with FPT Corporation and Viet Thai Group — three data centers for sovereign AI (Feb 2026); (3) Building 100 …"
+        "G42's 2026 milestones: (1) Announced 'agent factory' to manage self-running AI systems (Feb 2026); (2) Signed $1B Vietnam framework with FPT Corporation and Viet Thai Group — three data centers for sovereign AI (Feb 2026); (3) Building 100 trillion token/day compute center in UAE in collaboration with Microsoft; (4) Revealed Sovereign AI operating model allowing states to deploy AI under national law even when infrastructure is hosted externally; (5) Stargate UAE (see infrastructure section) Q3 2026 first phase. G42 is scaling from UAE-national to global AI infrastructure operator."
       ],
       "source_urls": [
         "https://www.thenationalnews.com/future/technology/2026/02/09/g42-ai-vietnam/",
@@ -914,10 +931,10 @@
       "type_of_move": [
         "Tier 2"
       ],
-      "investment_amount": "$30 billion ",
+      "investment_amount": "$30 billion",
       "strategic_intent": "Anthropic $30B Series G closed; MGX and ATIC (Abu Dhabi) confirmed co-leads — prior 'in discussions' now resolved",
       "key_deals": [
-        "Anthropic closed its $30 billion Series G round (post-money valuation $380B) in February 2026. Abu Dhabi's MGX co-led the round alongside other investors. ATIC (Abu Dhabi Technology Investment Company, also known as Insight Partners minorit…"
+        "Anthropic closed its $30 billion Series G round (post-money valuation $380B) in February 2026. Abu Dhabi's MGX co-led the round alongside other investors. ATIC (Abu Dhabi Technology Investment Company, also known as Insight Partners minority owner) also confirmed as participant. This resolves the 'in discussions' flag from the July 2025 seed dataset — Anthropic's Gulf investment is confirmed and closed. MGX now holds stakes in OpenAI, Anthropic, and xAI simultaneously."
       ],
       "source_urls": [
         "https://www.bloomberg.com/news/articles/2026-02-17/openai-anthropic-deals-power-abu-dhabi-s-100-billion-ai-bet",
@@ -940,10 +957,10 @@
       "type_of_move": [
         "Tier 2"
       ],
-      "investment_amount": "$3B ",
+      "investment_amount": "$3B",
       "strategic_intent": "HUMAIN invests $3B in xAI Series E; 500MW Saudi hub in development",
       "key_deals": [
-        "xAI's Saudi Arabia relationship deepened in 2026: HUMAIN invested $3B in xAI's Series E (Feb 2026, CNBC). The 500MW flagship data center hub partnership (announced November 2025) is in development — the largest announced xAI deployment outs…"
+        "xAI's Saudi Arabia relationship deepened in 2026: HUMAIN invested $3B in xAI's Series E (Feb 2026, CNBC). The 500MW flagship data center hub partnership (announced November 2025) is in development — the largest announced xAI deployment outside the US. xAI/Grok deployment in Saudi Arabia expected to be branded through HUMAIN Chat. Note: ground-breaking timeline for the 500MW facility not yet confirmed as of May 2026."
       ],
       "source_urls": [
         "https://www.cnbc.com/2026/02/19/saudis-humain-invested-3-billion-in-xais-series-e-funding-round.html"
@@ -965,10 +982,10 @@
       "type_of_move": [
         "Tier 2"
       ],
-      "investment_amount": "$20B ",
+      "investment_amount": "$20B",
       "strategic_intent": "Brookfield-Qai $20B JV confirmed; Integrated Compute Center in Qatar under development",
       "key_deals": [
-        "The $20B Brookfield-Qai joint venture (announced December 9, 2025) is active. KIA (Kuwait Investment Authority) is a confirmed participant in Brookfield's $100B BAIIF fund that anchors the Qatar deal. At Web Summit Qatar (February 2026), Qa…"
+        "The $20B Brookfield-Qai joint venture (announced December 9, 2025) is active. KIA (Kuwait Investment Authority) is a confirmed participant in Brookfield's $100B BAIIF fund that anchors the Qatar deal. At Web Summit Qatar (February 2026), Qai confirmed the Integrated Compute Center is in development. No hyperscaler Qatar region exists yet; BAIIF's Qatar Integrated Compute Center is the primary GPU compute source for Qatar-based users in 2026."
       ],
       "source_urls": [
         "https://bam.brookfield.com/press-releases/brookfield-and-qai-form-20-billion-strategic-investment-partnership-ai",
@@ -1383,7 +1400,7 @@
       "programs": [
         "HUMAIN 2026 operational milestones: GPU delivery, $1.2B financing, $3B xAI investment, Hexagon launch"
       ],
-      "budget": "$1.2B ",
+      "budget": "$1.2B",
       "timeline": "2026-01-21",
       "ministry_authority": "HUMAIN (Saudi Arabia, PIF)",
       "strategic_intent": "HUMAIN 2026 operational milestones: GPU delivery, $1.2B financing, $3B xAI investment, Hexagon launch",
@@ -1429,7 +1446,7 @@
       "programs": [
         "Qai publicly operational; Brookfield $20B JV advancing; startup compute credit fund launched"
       ],
-      "budget": "$526B ",
+      "budget": "$526B",
       "timeline": "2026-02-02",
       "ministry_authority": "Qai (Qatar Investment Authority subsidiary)",
       "strategic_intent": "Qai publicly operational; Brookfield $20B JV advancing; startup compute credit fund launched",
@@ -1494,7 +1511,7 @@
       "programs": [
         "KIA $9B in AI/digital over 5 years confirmed; active in Brookfield BAIIF as anchor LP"
       ],
-      "budget": "$9B ",
+      "budget": "$9B",
       "timeline": "2026-01-03",
       "ministry_authority": "Kuwait Investment Authority (KIA)",
       "strategic_intent": "KIA $9B in AI/digital over 5 years confirmed; active in Brookfield BAIIF as anchor LP",
@@ -2013,7 +2030,8 @@
       "title": "Jais 2 (UAE, 70B parameters) — released December 2025; 2026 app deployment anticipated",
       "event_date": "2025-12-09",
       "recency_bucket": "late-2025-active",
-      "recommended_action": "update_with_2026_source"
+      "recommended_action": "update_with_2026_source",
+      "historical": true
     },
     {
       "entity": "UAE federal Agentic AI workforce training plan (~80,000 workers)",
@@ -2106,7 +2124,10 @@
       "title": "Iran conflict as GCC AI inflection risk: data centers now geopolitical targets",
       "insight": "The February-March 2026 Iran conflict introduced a new strategic variable: AI data centers as legitimate military targets. AWS outages in UAE and Bahrain disrupted banking, payments, and enterprise services. This fundamentally alters the infrastructure risk premium for GCC AI capital allocation. Near-term: no withdrawal of committed capital (too large); medium-term: hyperscalers may distribute next-wave capacity to India, Northern Europe, Southeast Asia. GCC governments — particularly UAE and Saudi Arabia — must address this risk to preserve hyperscaler confidence. The April 8 ceasefire provides temporary stability but not structural resolution.",
       "implications": [
-        "The February-March 2026 Iran conflict introduced a new strategic variable: AI data centers as legitimate military targets. AWS outages in UAE and Bahrain disrupted banking, payments, and enterprise services. This fundamentally alters the in"
+        "AI data centers in the GCC are now treated as legitimate military targets, raising the infrastructure risk premium for capital allocation.",
+        "Banking, payments, and enterprise services experienced outages from AWS UAE/Bahrain disruption — operational continuity must be re-engineered against geopolitical disruption.",
+        "Near-term: no withdrawal of committed capital (too large); medium-term: hyperscalers may distribute next-wave capacity to India, Northern Europe, and Southeast Asia.",
+        "UAE and Saudi Arabia must address this risk explicitly to preserve hyperscaler confidence; the April 8 ceasefire provides temporary stability but not structural resolution."
       ],
       "confidence": "High",
       "recency_bucket": "2026-current",
@@ -2353,7 +2374,7 @@
       "version_to": "2.0.0"
     },
     {
-      "id": "acb_001",
+      "id": "acb_002",
       "version": "1.0.0",
       "date": "2025-05-02",
       "action": "Initial seed dataset compiled",
@@ -2371,7 +2392,7 @@
       "new_items_2026": []
     },
     {
-      "id": "acb_002",
+      "id": "acb_003",
       "version": "2.3.0",
       "date": "2026-05-26",
       "action": "Combined May 12 + May 19 + May 26 refresh published",
@@ -2383,6 +2404,16 @@
         "Aramco/Pasqal counted as advanced-compute/AI-adjacent, not standard AI capacity",
         "No newly verified GCC AI startup funding round found in the May 26 run after the May 19 package"
       ]
+    },
+    {
+      "id": "acb_004",
+      "version": "2.3.1",
+      "date": "2026-05-27",
+      "action": "v2.3.0 → v2.3.1: data-quality hardening pass (no new intelligence)",
+      "summary": "Restored five truncated business_impact / key_deals fields from sibling description fields; deduplicated archive_changelog_baseline IDs (acb_001 collision); added historical=true flag to _legacy items; rewrote strategic_insights/si2026_003.implications as bullets; documented credibility_legend and recency_bucket_legend in _meta; trimmed trailing whitespace globally; added npm validate / repair tooling; resynced 2026-05-26 archive snapshot to match the fixed dataset.",
+      "sources_count": 0,
+      "primary_gaps": [],
+      "items_archived": []
     }
   ]
 }

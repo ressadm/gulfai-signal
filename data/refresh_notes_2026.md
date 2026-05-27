@@ -1,8 +1,24 @@
 # GulfAI Signal — 2026 Recency-Corrected Refresh: Analyst Notes
 
-**Current Version:** 2.3.0 (combined May 12 + May 19 + May 26 refresh published 2026-05-26)
-**Prior Version:** 2.0.0 (compiled May 6, 2026); v1.0.0 (compiled May 2025)
+**Current Version:** 2.3.1 (data-quality hardening pass over the 2026-05-26 release, published 2026-05-27)
+**Prior Versions:** 2.3.0 (combined May 12 + May 19 + May 26 refresh, 2026-05-26); 2.0.0 (compiled May 6, 2026); v1.0.0 (compiled May 2025)
 **Analyst:** GulfAI Research Team (automated refresh via structured web research)
+
+---
+
+## v2.3.1 — Quality hardening pass (2026-05-27)
+
+No new intelligence in this release. Pure data integrity / presentation fixes against the live QA report:
+
+- **Truncated narrative fields restored.** Five commercial-adoption / global-player records had `business_impact` or `key_deals[0]` cut mid-sentence (e.g. "…Aramco " for `ca2026_001`, "(automat" for `ca2026_002`, ellipses on every `gp2026_00x.key_deals[0]`). Each restored from the sibling `description` / `why_it_matters` field, which already held the full text.
+- **Duplicate IDs removed** from `archive_changelog_baseline` — two entries shared `acb_001`. Renumbered to `acb_001`, `acb_002`, `acb_003`.
+- **`_legacy` items** retain their canonical IDs (backwards compatibility for any deep link) but now carry an explicit `historical: true` flag so the UI does not need to parse the ID suffix to render them as historical context.
+- **`strategic_insights/si2026_003.implications`** rewritten as four bullet-style implications (it previously held a single sentence prefix of the `insight` field).
+- **Credibility legend documented.** `_meta.credibility_legend` and `_meta.recency_bucket_legend` added so the credibility methodology is consumable in-data (and surfaceable by the UI in a future build).
+- **Trailing whitespace** trimmed across all string fields.
+- **Validation tooling** added (`npm run validate`). Hard fails on JSON parse errors, missing required sections / fields, duplicate IDs, missing source URLs on high-value records, missing May 26 key records, and obvious mid-word truncations. Run `npm run repair` followed by `npm run validate` before publishing a refresh.
+
+The archive snapshot at `data/archive/2026-05-26.json` was re-synced with the v2.3.1 content — the underlying intelligence is identical to v2.3.0; only the integrity bugs were fixed.
 
 ---
 

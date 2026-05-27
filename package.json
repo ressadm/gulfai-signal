@@ -1,0 +1,13 @@
+{
+  "name": "gulfai-signal",
+  "version": "2.3.1",
+  "private": true,
+  "description": "GulfAI Signal — 360° AI Activity in GCC/MENA. Static, hash-routed GitHub Pages site. Data lives in data/current.json with archive snapshots under data/archive/.",
+  "scripts": {
+    "validate": "python3 scripts/validate_current.py",
+    "validate:report": "python3 scripts/validate_current.py --report",
+    "repair": "python3 scripts/repair_current.py",
+    "check": "python3 scripts/validate_current.py && python3 -c \"import json,sys; json.load(open('data/archive/2026-05-26.json')); print('archive 2026-05-26.json: ok')\"",
+    "test": "npm run check"
+  }
+}
