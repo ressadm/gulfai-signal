@@ -1,6 +1,6 @@
 {
   "name": "gulfai-signal",
-  "version": "2.3.2",
+  "version": "2.6.0",
   "private": true,
   "description": "GulfAI Signal — 360° AI Activity in GCC/MENA. Static, hash-routed GitHub Pages site. Data lives in data/current.json with archive snapshots under data/archive/.",
   "scripts": {

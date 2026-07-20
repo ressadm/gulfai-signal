@@ -68,6 +68,7 @@ WEAK_SIGNAL_NEGATIVE_SIGNALS = {
     "ws2026_005",  # KAUST-China research geopolitical exposure — watchlist
     "ws2026_006",  # GCC AI Alliance $5B Arabic LLM fund — unverified in 2026
     "ws2026_007",  # OmanGPT — no 2026 release update found
+    "ws2026_016",  # Gulf data-center-strike narrative — no primary source exists; absence IS the evidence
 }
 
 # May 26 refresh — every record below MUST remain in current.json.
