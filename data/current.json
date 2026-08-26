@@ -36,7 +36,7 @@
     ],
     "prior_version": "2.6.0 (2026-07-07)",
     "analysis_date": "2026-08-26",
-    "recency_policy": "All weekly brief entries must have a verified 2026 update or implementation milestone. Items marked stale-review require re-verification before live use. Late-2025 items included only where 2026 execution, deployment, regulatory effect, or funding close is confirmed. May 26 combined refresh prioritizes operational-deployment signals (Qiddiya, Aramco/Pasqal QCaaS, SDAIA Hajj, UAE first government AI agents) alongside merged May 12 commercial/governance and May 19 startup-funding packages.",
+    "recency_policy": "All weekly brief entries must have a verified 2026 update or implementation milestone. The current dashboard orders weekly_brief by the active catch-up priority first, led by the 2026-08-26 package; earlier May/June/July items remain below current August records for history.",
     "credibility_legend": {
       "High": "Primary source: official company / government press release, regulator filing, or a tier-1 outlet (Reuters, Bloomberg, CNBC, NYT, FT, Arab News, The National) with first-party confirmation.",
       "Medium-High": "Reputable secondary source (industry trade press, MIT Sloan ME, Wamda, Magnitt, Lucidity Insights) corroborated by at least one primary indicator or a second secondary source.",
@@ -50,13 +50,465 @@
       "historical-context": "Pre-2026 or superseded item kept for baseline / change tracking.",
       "stale-review": "Item flagged for analyst re-verification before live use."
     },
-    "last_quality_pass": "2026-07-07",
+    "last_quality_pass": "2026-08-26",
     "public_url": "https://ressadm.github.io/gulfai-signal/",
     "repository": "https://github.com/ressadm/gulfai-signal",
-    "release_note": "Consolidated v2.7.0 catch-up publishing the approved July 21, July 28, August 4 and August 26 refresh packages in one release. Public app: https://ressadm.github.io/gulfai-signal/. Repo: https://github.com/ressadm/gulfai-signal.",
+    "release_note": "v2.7.0 hotfix: weekly_brief is ordered with the August 26 catch-up intelligence first; May/June items remain archived/history below current records. Public app: https://ressadm.github.io/gulfai-signal/.",
     "baseline_verification": "Before this release, the public app served v2.6.0 compiled 2026-07-07 with 187 records; repo head 4314f9e from 2026-07-20. This release makes 2026-08-26 the current dashboard baseline."
   },
   "weekly_brief": [
+    {
+      "id": "wb2026_034",
+      "date": "2026-08-24",
+      "headline": "Mistral × HUMAIN strategic collaboration anchors Saudi sovereign AI at declared scale",
+      "country": "Saudi Arabia",
+      "summary": "Mistral and HUMAIN announced a strategic collaboration worth hundreds of millions of Euros covering AI infrastructure, model development and localisation, Arabic frontier models, and deployment across Saudi Arabia and the region, initially focused on cybersecurity and voice; use of HUMAIN data centres remains exploratory with no capacity, timeline or customer figures disclosed.",
+      "significance": "High",
+      "sources": [
+        "https://mistral.ai/news/mistral-x-humain/",
+        "https://www.prnewswire.com/news-releases/mistral-and-humain-announce-strategic-collaboration-to-advance-sovereign-ai-in-saudi-arabia-and-regionally-302858613.html"
+      ],
+      "rank": 1,
+      "why_it_matters": "First declared-scale European frontier-lab anchor into HUMAIN; gives Saudi AI a non-US frontier partner while preserving execution caveats around capacity, dates and customer commitments.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-24"
+    },
+    {
+      "id": "wb2026_035",
+      "date": "2026-08-09",
+      "headline": "UAE moves agentic AI mandate into execution with 100+ federal officials and 50% two-year target",
+      "country": "UAE",
+      "summary": "The National Committee for the Agentic AI Project convened more than 100 federal officials and launched the federal strategic track under UAE Government 4.0, tied to the national target to convert 50% of government operations, services and tasks to agentic AI within two years.",
+      "significance": "High",
+      "sources": [
+        "https://www.wam.ae/en/article/c1nbi33-uae-advances-integration-agentic-across-federal"
+      ],
+      "rank": 2,
+      "why_it_matters": "Largest quantified public-sector AI demand commitment in the GCC; it turns agentic AI from policy direction into a dated procurement clock for ministries and suppliers.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-09"
+    },
+    {
+      "id": "wb2026_036",
+      "date": "2026-08-12",
+      "headline": "Saudi text-and-data-mining exception becomes effective for AI model development",
+      "country": "Saudi Arabia",
+      "summary": "Saudi Arabia’s copyright text-and-data-mining exception took effect on 12 August 2026, permitting reproduction of lawfully published works for AI development without author permission within statutory limits on source and purpose.",
+      "significance": "High",
+      "sources": [
+        "https://www.modulos.ai/middle-east-ai-regulations/",
+        "https://utmps.com/saudi-arabias-new-copyright-law-key-changes-and-implications/"
+      ],
+      "rank": 3,
+      "why_it_matters": "Creates a durable jurisdictional advantage for in-Kingdom training workloads that complements HUMAIN compute and model partnerships such as Mistral.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-12"
+    },
+    {
+      "id": "wb2026_037",
+      "date": "2026-08-09",
+      "headline": "Kuwait creates standalone AI services licence code 620106 under CITRA supervision",
+      "country": "Kuwait",
+      "summary": "Ministerial Decision No. 159 of 2026, supervised by CITRA and published in Kuwait Al-Youm Issue 1803 on 9 August 2026, makes artificial intelligence services and solutions a standalone licensable activity under international code 620106.",
+      "significance": "High",
+      "sources": [
+        "https://www.wefaqlaw.com/en/blog/kuwait-gives-artificial-intelligence-its-own-licence-what-technology-businesses-should-do-now"
+      ],
+      "rank": 4,
+      "why_it_matters": "First GCC market-access gate specifically for who may sell AI services and solutions; vendors selling into Kuwait now have an immediate licence-code compliance action.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-09"
+    },
+    {
+      "id": "wb2026_038",
+      "date": "2026-08-17",
+      "headline": "OpenAI UAE inference residency is live, with GPT-5.2 residency constraints",
+      "country": "UAE",
+      "summary": "OpenAI lists the UAE as one of only three global inference-residency regions alongside Europe and the United States, providing local inference for eligible UAE customers; the UAE residency option is limited to GPT-5.2 and excludes image generation, internal search, ChatGPT Work, improved memory and GPT-Live.",
+      "significance": "High",
+      "sources": [
+        "https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt"
+      ],
+      "rank": 5,
+      "why_it_matters": "Materially lowers the sovereignty objection to OpenAI for UAE government and regulated buyers while creating a two-tier product experience that local sovereign-cloud competitors can target.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-17"
+    },
+    {
+      "id": "wb2026_039",
+      "date": "2026-08-14",
+      "headline": "Saudi AI/data-centre financing gap quantified: ~410MW installed versus 2.5–3GW announced",
+      "country": "Saudi Arabia",
+      "summary": "Alvarez & Marsal analysis puts installed Saudi capacity near 410MW IT load, a 2030 base case around 1GW, and announced delivery around 2.5–3GW, implying roughly $21–33bn of announced data-centre capex may not be financeable on current lender capacity.",
+      "significance": "Medium-High",
+      "sources": [
+        "https://www.consultancy-me.com/news/14033/the-financing-challenge-behind-saudi-arabias-data-center-boom"
+      ],
+      "rank": 6,
+      "why_it_matters": "Reframes compute scale as a debt-capacity and anchor-tenant problem, not only a chip-supply problem.",
+      "credibility": "Medium-High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-14"
+    },
+    {
+      "id": "wb2026_040",
+      "date": "2026-08-17",
+      "headline": "e& embeds agentic AI and Copilot licences into UAE business connectivity plans",
+      "country": "UAE",
+      "summary": "e& UAE launched agentic AI in core mobile and fixed business plans, while Business Pro AI bundles Aleria Lite, Microsoft 365 Copilot, or both as an AI Licence managed through e& and supported by sovereign compute services.",
+      "significance": "High",
+      "sources": [
+        "https://www.eand.com/en/news/17-08-26-eand-agentic-ai-core-connectivity.html",
+        "https://www.core42.ai/resources/news/ce-uae-and-core42-partner-to-deliver-sovereign-ai-infrastructure-at-scale",
+        "https://www.eand.ae/en/smb/products/fixed-services/business-internet.html"
+      ],
+      "rank": 7,
+      "why_it_matters": "Turns SME AI adoption into a connectivity SKU and ties telco distribution to both sovereign compute and Western productivity AI.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-17"
+    },
+    {
+      "id": "wb2026_041",
+      "date": "2026-08-05",
+      "headline": "NEOM Oxagon 1.5GW AI/data-centre campus enters construction path",
+      "country": "Saudi Arabia",
+      "summary": "DataVolt’s NEOM Oxagon AI data-centre campus is described at 1.5GW, with phase 1 funded from an initial $5bn investment, construction expected within 2–3 months from 5 August 2026, and phase 1 targeted operational in 2028.",
+      "significance": "High",
+      "sources": [
+        "https://www.agbi.com/tech/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/"
+      ],
+      "rank": 8,
+      "why_it_matters": "One of the mega-scale Saudi compute announcements is moving toward physical construction, making customer contracting and project finance the proof points to watch.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-05"
+    },
+    {
+      "id": "wb2026_042",
+      "date": "2026-08-22",
+      "headline": "Oman establishes AI Special Economic Zone by Royal Decree No. 50/2026",
+      "country": "Oman",
+      "summary": "Oman created an AI Special Economic Zone near Muscat International Airport under Royal Decree No. 50/2026 at RO 106m across three phases and about 104,000 sqm, with phase-1 construction expected in Q4 2027 and an AI university under discussion.",
+      "significance": "High",
+      "sources": [
+        "https://www.omanobserver.om/ampArticle/1194910",
+        "https://www.omanobserver.om/ampArticle/1194933"
+      ],
+      "rank": 9,
+      "why_it_matters": "Oman’s AI positioning moved from strategy to a legally instantiated zone, differentiated around neutrality rather than Saudi scale or UAE alignment.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-22"
+    },
+    {
+      "id": "wb2026_043",
+      "date": "2026-08-06",
+      "headline": "Ooredoo commits roughly $800m for 49% of Zankore’s Indonesia AI factory platform",
+      "country": "Qatar / outbound",
+      "summary": "Ooredoo committed roughly $800m for 49% of Zankore, a 1GW-target NVIDIA DSX AI Factory platform in Indonesia, with about 200MW targeted in H1 2027 and about $600m five-year cumulative EBITDA indicated.",
+      "significance": "High",
+      "sources": [
+        "https://www.reuters.com/business/media-telecom/qatars-ooredoo-leads-800-million-investment-ai-platform-zankore-2026-08-06/"
+      ],
+      "rank": 10,
+      "why_it_matters": "Shows Qatar choosing international ownership of AI infrastructure, but the record remains outbound and excluded from domestic GCC compute totals.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "add_live",
+      "event_date": "2026-08-06"
+    },
+    {
+      "id": "wb2026_021",
+      "date": "2026-07-06",
+      "event_date": "2026-07-06",
+      "headline": "Inception42 (G42) and Microsoft launch agentic AI collaboration for GCC governments and enterprises",
+      "country": "UAE",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 11,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "G42's rebranded AI arm Inception42 and Microsoft announced a collaboration on 2026-07-06 to accelerate agentic AI adoption across governments and enterprises in the UAE, pairing Inception42's sovereign-layer models with Microsoft's agentic stack and interoperability tooling.",
+      "why_it_matters": "The freshest item in the July window ties a UAE sovereign AI champion to Microsoft's agentic platform, signalling that the region's agentic-government push now has a named hyperscaler execution partner.",
+      "sources": [
+        "https://economymiddleeast.com/news/g42s-inception42-microsoft-advance-agentic-ai-adoption-governments-enterprises/"
+      ]
+    },
+    {
+      "id": "wb2026_025",
+      "date": "2026-07-01",
+      "event_date": "2026-07-01",
+      "headline": "Abu Dhabi's MGX closes ~$49bn AI-infrastructure fund",
+      "country": "UAE",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 12,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "MGX closed an AI-infrastructure fund of about $49bn (against a $45bn target), the largest GCC AI-capital vehicle to date and a core instrument of Abu Dhabi's global AI-infrastructure strategy.",
+      "why_it_matters": "A single sovereign-linked vehicle at ~$49bn concentrates enough capital to shape global AI-infrastructure buildout terms, reinforcing GCC sovereign capital as a primary force in the AI supply chain.",
+      "sources": [
+        "https://www.forbes.com/sites/guneyyildiz/2026/07/03/abu-dhabis-49-billion-ai-fund-and-its-sovereign-rivals/",
+        "https://en.sharikatmubasher.com/news/article/21558388/abu-dhabis-mgx-raises-50bn-to-accelerate-spending-on-ai-infrastructure"
+      ]
+    },
+    {
+      "id": "wb2026_028",
+      "date": "2026-07-01",
+      "event_date": "2026-07-01",
+      "headline": "Oracle to expand Abu Dhabi region with Nvidia Blackwell Supercluster (4,000+ GPUs)",
+      "country": "UAE",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 13,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "Oracle announced expansion of its Abu Dhabi region with the first OCI Nvidia Blackwell Supercluster in the region, comprising more than 4,000 Blackwell GPUs, alongside OCI Enterprise AI going live in UAE Central.",
+      "why_it_matters": "The first regional OCI Blackwell Supercluster gives UAE enterprises frontier-class managed compute locally, strengthening the country's position as a managed enterprise-AI hub.",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/oracle-to-expand-abu-dhabi-region-with-nvidia-blackwell-supercluster/",
+        "https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-june-2026"
+      ]
+    },
+    {
+      "id": "wb2026_030",
+      "date": "2026-06-30",
+      "event_date": "2026-06-30",
+      "headline": "1001 closes $30M Series A led by Lux Capital to build a sovereign AI OS for the GCC",
+      "country": "GCC",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 14,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "1001 closed a $30M Series A led by Lux Capital with Sanabil (PIF), 9Yards, Hanabi, General Catalyst, CIV and Chris Ré, to build a sovereign AI operating system for critical infrastructure across the GCC.",
+      "why_it_matters": "A top-tier US VC leading a sovereign-AI-OS thesis with PIF's Sanabil participating shows international conviction in GCC sovereign-AI software, not just compute.",
+      "sources": [
+        "https://www.wamda.com/2026/06/1001-closes-30-million-series-a-build-sovereign-ai-gcc"
+      ]
+    },
+    {
+      "id": "wb2026_023",
+      "date": "2026-06-28",
+      "event_date": "2026-06-28",
+      "headline": "HUMAIN breaks ground on Riyadh and Dammam AI data centers; first facilities target Q2 2026 go-live",
+      "country": "Saudi Arabia",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 15,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "HUMAIN broke ground on two AI data centers (Riyadh and Dammam, 100MW each initial) with a multi-vendor stack spanning AWS (a $5bn AI Zone), AMD and Cisco (1GW over five years), Groq and Qualcomm, and up to 35,000 GB300 GPUs approved. First facilities are expected to go live in Q2 2026.",
+      "why_it_matters": "Saudi sovereign compute moved from MoUs to physical groundbreakings with a genuinely multi-vendor stack, marking the KSA sovereign-AI thesis as execution-stage rather than intent-stage.",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/humain-breaks-ground-two-data-centers-with-first-facilities-expected-to-go-live-in-q2-2026/"
+      ]
+    },
+    {
+      "id": "wb2026_024",
+      "date": "2026-06-28",
+      "event_date": "2026-06-28",
+      "headline": "xAI and HUMAIN to build 500MW Saudi data center; Grok deployed countrywide",
+      "country": "Saudi Arabia",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 16,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "Announced at the US-Saudi Investment Forum, xAI and HUMAIN will build a 500MW Saudi data center with Grok deployed countrywide and chip shipments approved. It is the first countrywide frontier-LLM deployment delivered via sovereign infrastructure.",
+      "why_it_matters": "A frontier model (Grok) running countrywide on sovereign Saudi infrastructure signals that US-GCC chip and model access is tightening into concrete deployments, not just agreements.",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/"
+      ]
+    },
+    {
+      "id": "wb2026_026",
+      "date": "2026-06-28",
+      "event_date": "2026-06-28",
+      "headline": "Brookfield launches $100bn AI-infrastructure program with Nvidia and Kuwait Investment Authority as backers",
+      "country": "GCC",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 17,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "Brookfield launched a $100bn AI-infrastructure program securing Nvidia and the Kuwait Investment Authority as backers. It marks the first visible entry of Kuwaiti sovereign capital into the global AI-infrastructure race and deepens GCC sovereign LPs' role as anchors of global AI capital.",
+      "why_it_matters": "KIA's participation brings a historically quieter Gulf sovereign into large-scale AI-infrastructure finance, widening the base of GCC capital shaping global compute buildout.",
+      "sources": [
+        "https://www.datacenterdynamics.com/en/news/brookfield-launches-100bn-ai-infrastructure-fund-secures-nvidia-and-kia-as-backers/"
+      ]
+    },
+    {
+      "id": "wb2026_029",
+      "date": "2026-06-16",
+      "event_date": "2026-06-16",
+      "headline": "CNTXT AI closes $60M Series A and acquires Actualize for Arabic voice agents",
+      "country": "UAE",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 18,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "CNTXT AI closed a $60M Series A (co-led by ai71 and BlueFive) to deploy secure AI infrastructure worldwide and acquired Actualize, an enterprise builder of dialect-aware Arabic voice agents, integrating it into CNTXT AI's Munsit platform. This is the largest fresh AI-specific GCC raise of the window and resolves the June 9 pending acquisition item.",
+      "why_it_matters": "The raise plus acquisition consolidates Arabic-first enterprise voice AI (banking, healthcare, government use cases) under a secure-infrastructure player, a defensible regional AI depth signal.",
+      "sources": [
+        "https://www.wamda.com/ar/2026/06/cntxt-ai-closes-60-million-series-deploy-secure-ai-infrastructure-worldwide",
+        "https://www.wamda.com/2026/06/uae-cntxt-ai-acquires-actualize-expand-enterprise-grade-arabic-ai-agents"
+      ]
+    },
+    {
+      "id": "wb2026_022",
+      "date": "2026-06-14",
+      "event_date": "2026-06-14",
+      "headline": "UAE establishes federal Artificial Intelligence and Data Authority",
+      "country": "UAE",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 19,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "By decree of Sheikh Mohammed bin Rashid on 2026-06-14, the UAE established a federal Artificial Intelligence and Data Authority consolidating the AI Office, TDRA functions and the federal Data Office, chaired by Omar Al Olama. It is the most significant GCC AI-governance structural change of the window.",
+      "why_it_matters": "Consolidating AI, telecom-regulatory and data mandates into one federal authority moves the UAE from distributed AI policy to a single accountable governance structure that will shape procurement, data residency and agentic-service rules.",
+      "sources": [
+        "https://www.thenationalnews.com/news/uae/2026/06/14/uae-unveils-ai-and-data-authority-to-create-faster-and-smarter-government/",
+        "https://www.morganlewis.com/pubs/2026/06/uae-establishes-federal-authority-for-artificial-intelligence-and-data"
+      ]
+    },
+    {
+      "id": "wb2026_027",
+      "date": "2026-06-11",
+      "event_date": "2026-06-11",
+      "headline": "UAE targets 50% of federal services on AI agents within two years; launches 90-day sprint across 50 entities",
+      "country": "UAE",
+      "significance": "High",
+      "credibility": "High",
+      "rank": 20,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "The UAE Cabinet approved a target for 50% of federal services to be delivered by AI agents within two years and launched a 90-day agentic AI sprint across 50 federal entities involving more than 300 officials as the execution vehicle.",
+      "why_it_matters": "The 90-day sprint converts the UAE's headline 50% agentic-government target into a time-boxed, entity-by-entity execution program, making agentic adoption trackable across named agencies.",
+      "sources": [
+        "https://abudhabi.news/posts/uae-targets-50-of-services-to-ai-agents-within-two-years",
+        "https://www.middleeastainews.com/p/uae-runs-90-day-ai-sprint-across"
+      ]
+    },
+    {
+      "id": "wb2026_031",
+      "date": "2026-06-05",
+      "event_date": "2026-06-05",
+      "headline": "du and Open Innovation AI sign MoU for UAE sovereign agentic AI (National Hypercloud + GPU orchestration)",
+      "country": "UAE",
+      "significance": "Medium-High",
+      "credibility": "Medium-High",
+      "rank": 21,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "du and Open Innovation AI signed an MoU, witnessed by the UAE Cyber Security Council, to link du Tech's CSC-certified National Hypercloud with Open Innovation AI's GPU orchestration platform for secure, in-country sovereign agentic AI across government and enterprise. Stage is MoU / opportunity-assessment; no commercial terms, GPU counts or timeline were disclosed (June 9 carry-forward).",
+      "why_it_matters": "It is a practical bridge between sovereign cloud, cybersecurity certification and agentic AI workload orchestration, though it remains assessment-stage until named workloads and metrics appear.",
+      "sources": [
+        "https://www.zawya.com/en/press-release/companies-news/du-and-open-innovation-ai-join-forces-to-power-the-uaes-sovereign-agentic-ai-future-kjkydd4k"
+      ]
+    },
+    {
+      "id": "wb2026_032",
+      "date": "2026-06-01",
+      "event_date": "2026-06-01",
+      "headline": "Positron AI establishes first presence outside the US in Dubai's DIFC",
+      "country": "UAE",
+      "significance": "Medium-High",
+      "credibility": "High",
+      "rank": 22,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "Positron AI established its first presence outside the United States in Dubai's DIFC to support specialized AI inference infrastructure and power-efficient model serving, having raised more than $300M including a $230M Series B. No GCC customer deployment or live in-region capacity is disclosed yet (June 2 carry-forward).",
+      "why_it_matters": "A US inference-hardware specialist choosing DIFC as its first international base reflects the region's shift from GPU accumulation toward efficient inference close to regulated workloads.",
+      "sources": [
+        "https://mediaoffice.ae/en/news/2026/jun/01-06/positron-ai-establishes-first-presence-outside-the"
+      ]
+    },
+    {
+      "id": "wb2026_033",
+      "date": "2026-05-27",
+      "event_date": "2026-05-27",
+      "headline": "RedCloud launches Saudi operations under $30M JV with Kayanat, running FMCG intelligence on Anthropic Claude",
+      "country": "Saudi Arabia",
+      "significance": "Medium-High",
+      "credibility": "Medium-High",
+      "rank": 23,
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "summary": "RedCloud launched Saudi operations via a $30M, five-year JV with Kayanat to deploy its RAID predictive-intelligence infrastructure for FMCG distribution, built on Anthropic Claude models and RedCloud's $6.9bn FMCG transaction data foundation across Riyadh, Eastern and Western Provinces. Stage is pipeline / operational launch; RedCloud Arabia is pending incorporation with commercial closes expected in 2H 2026 (June 2 carry-forward).",
+      "why_it_matters": "A sector-specific Saudi commercial AI JV combining a local operating partner, a large data asset and Anthropic Claude agent workflows is a clearer adoption signal than generic AI-adoption headlines.",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/05/27/3302099/0/en/redcloud-launches-saudi-operations-under-30m-joint-venture-with-kayanat-raid-intelligence-infrastructure-on-anthropic-claude-activates-for-fmcg-deployment-across-kingdom.html"
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "headline": "SDAIA expands operational AI for Hajj 1447/2026 — 75 sites, 17 international ports, 19-language services",
+      "country": "Saudi Arabia",
+      "summary": "SDAIA, with the Ministry of Interior and Hajj ecosystem entities, expanded operational AI for Hajj 1447 / 2026: AI-supported mobile verification, biometric and facial-image processing, smart monitoring, crowd-density analytics, computer vision, large-language-model analysis, and multilingual digital services. Reported footprint: 75 sites supported or operated, ~14 sorting/security-control sites, services in 10 countries through 17 international ports, AI-enabled mobile checks completed in no more than 40 seconds, and Tawakkalna services in 19 languages.",
+      "significance": "High",
+      "sources": [
+        "https://english.aawsat.com/gulf/5275170-saudi-arabia-expands-use-ai-serve-hajj-pilgrims"
+      ],
+      "rank": 24,
+      "why_it_matters": "Live, high-scale public-sector AI operations signal with measurable deployment footprint. Reinforces Saudi demand for edge AI, computer vision, multilingual service automation, and secure identity systems. Anchors Saudi Arabia's national-scale operational AI credibility.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-05-22",
+      "id": "wb2026_014"
+    },
+    {
+      "date": "2026-05-21",
+      "headline": "Korn Ferry: 9 in 10 Gulf organizations use AI but only 1% are fully equipped to scale",
+      "country": "GCC",
+      "summary": "A Korn Ferry regional survey reported by Consultancy-me found more than 9 in 10 Gulf organizations apply AI in some form; 49% are piloting in selected functions; 28% remain in exploration; only 1% are fully equipped to adopt AI at scale. Barriers cited: technology integration (61%), talent gaps (44%), ROI uncertainty (37%).",
+      "significance": "Medium",
+      "sources": [
+        "https://www.consultancy-me.com/news/13520/gulf-organisations-race-ahead-on-ai-adoption-but-scaling-and-workforce-gaps-persist"
+      ],
+      "rank": 25,
+      "why_it_matters": "Clearest demand-side counterweight to headline announcements. Suggests significant services/integration opportunity but warns much commercial AI activity is still pre-scale. Should influence demand narrative and adoption-stage scoring rather than be counted as company-level deployment.",
+      "credibility": "Medium-High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-05-21",
+      "id": "wb2026_020"
+    },
+    {
+      "date": "2026-05-20",
+      "headline": "Qiddiya adopts Google Cloud AI as the operating layer for construction and visitor operations",
+      "country": "Saudi Arabia",
+      "summary": "Saudi Arabia's Qiddiya entertainment mega-project named Google Cloud as its AI operating layer, covering construction monitoring, visitor-pattern analysis, real-time park operations, Gemini-agent support for visitor behavior/spending/movement, and a Q-Brain decision support system for park management. Semafor reports the project sits within at least SAR 20 billion (~USD 5.3 billion) in scope. Master Works appears in sector coverage as systems integration context.",
+      "significance": "High",
+      "sources": [
+        "https://www.semafor.com/article/05/20/2026/saudi-theme-park-turns-to-google-for-ai"
+      ],
+      "rank": 26,
+      "why_it_matters": "Commercial mega-project adoption signal, not just sovereign AI. Qiddiya becomes an anchor demand case for Google Cloud AI in Saudi Arabia and a reference pattern for smart-city/venue AI operations across construction, mobility, retail behavior, security and visitor experience. May be replicated at NEOM, Red Sea Global, Diriyah and other giga-projects.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-05-20",
+      "id": "wb2026_013"
+    },
     {
       "date": "2026-05-20",
       "headline": "UAE launches first wave of operational government AI agents (procurement, tax audit, customer happiness, technical support)",
@@ -66,7 +518,7 @@
       "sources": [
         "https://www.thenationalnews.com/news/uae/2026/05/20/uae-launches-first-batch-of-ai-agents-to-aid-tax-audits-and-customer-service/"
       ],
-      "rank": 4,
+      "rank": 27,
       "why_it_matters": "First measurable implementation layer under the UAE's 50% agentic-government ambition. Government AI adoption is now trackable by named workflow domain (procurement, audit, customer service, IT support) rather than only by policy statements. These four agent categories define practical buying patterns commercial buyers may copy.",
       "credibility": "High",
       "recency_bucket": "2026-current",
@@ -83,64 +535,13 @@
       "sources": [
         "https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform/"
       ],
-      "rank": 2,
+      "rank": 28,
       "why_it_matters": "Material advanced-compute platform inside Aramco's Dhahran site. Although quantum is not standard AI compute, this should be tracked as part of the Gulf's emerging high-performance compute and AI-adjacent infrastructure stack. Signals industrial demand for hybrid advanced-compute services.",
       "credibility": "High",
       "recency_bucket": "2026-current",
       "recommended_action": "keep_live",
       "event_date": "2026-05-19",
       "id": "wb2026_012"
-    },
-    {
-      "date": "2026-05-20",
-      "headline": "Qiddiya adopts Google Cloud AI as the operating layer for construction and visitor operations",
-      "country": "Saudi Arabia",
-      "summary": "Saudi Arabia's Qiddiya entertainment mega-project named Google Cloud as its AI operating layer, covering construction monitoring, visitor-pattern analysis, real-time park operations, Gemini-agent support for visitor behavior/spending/movement, and a Q-Brain decision support system for park management. Semafor reports the project sits within at least SAR 20 billion (~USD 5.3 billion) in scope. Master Works appears in sector coverage as systems integration context.",
-      "significance": "High",
-      "sources": [
-        "https://www.semafor.com/article/05/20/2026/saudi-theme-park-turns-to-google-for-ai"
-      ],
-      "rank": 1,
-      "why_it_matters": "Commercial mega-project adoption signal, not just sovereign AI. Qiddiya becomes an anchor demand case for Google Cloud AI in Saudi Arabia and a reference pattern for smart-city/venue AI operations across construction, mobility, retail behavior, security and visitor experience. May be replicated at NEOM, Red Sea Global, Diriyah and other giga-projects.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-05-20",
-      "id": "wb2026_013"
-    },
-    {
-      "date": "2026-05-22",
-      "headline": "SDAIA expands operational AI for Hajj 1447/2026 — 75 sites, 17 international ports, 19-language services",
-      "country": "Saudi Arabia",
-      "summary": "SDAIA, with the Ministry of Interior and Hajj ecosystem entities, expanded operational AI for Hajj 1447 / 2026: AI-supported mobile verification, biometric and facial-image processing, smart monitoring, crowd-density analytics, computer vision, large-language-model analysis, and multilingual digital services. Reported footprint: 75 sites supported or operated, ~14 sorting/security-control sites, services in 10 countries through 17 international ports, AI-enabled mobile checks completed in no more than 40 seconds, and Tawakkalna services in 19 languages.",
-      "significance": "High",
-      "sources": [
-        "https://english.aawsat.com/gulf/5275170-saudi-arabia-expands-use-ai-serve-hajj-pilgrims"
-      ],
-      "rank": 3,
-      "why_it_matters": "Live, high-scale public-sector AI operations signal with measurable deployment footprint. Reinforces Saudi demand for edge AI, computer vision, multilingual service automation, and secure identity systems. Anchors Saudi Arabia's national-scale operational AI credibility.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-05-22",
-      "id": "wb2026_014"
-    },
-    {
-      "date": "2026-05-07",
-      "headline": "Aramco commits $372.5M to upstream supercomputing with solutions by stc — 7x current upstream compute capacity",
-      "country": "Saudi Arabia",
-      "summary": "Aramco signed a $372.5 million supercomputing deployment with solutions by stc for upstream energy AI/HPC workloads. Described as Aramco's largest-ever computing infrastructure deployment, the system is expected to provide approximately 7x current upstream computing capacity for seismic data processing, reservoir modeling and simulation. Delivery targeted for early 2027.",
-      "significance": "High",
-      "sources": [
-        "https://www.mitsloanme.com/article/saudi-aramco-bets-372-5m-on-supercomputing-for-hydrocarbon-discovery/"
-      ],
-      "rank": 5,
-      "why_it_matters": "Scaled industrial AI/HPC adoption signal in the energy sector — not a public-sector AI initiative. Moves stc solutions from telecom/IT services into mission-critical AI/HPC infrastructure and reframes Aramco's compute footprint at industrial scale.",
-      "credibility": "Medium-High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-05-07",
-      "id": "wb2026_015"
     },
     {
       "date": "2026-05-13",
@@ -152,31 +553,13 @@
         "https://lucidityinsights.com/news/aumet-secures-12m-series-a",
         "https://www.arabnews.com/node/2643776/business-economy"
       ],
-      "rank": 6,
+      "rank": 29,
       "why_it_matters": "Not an AI-wrapper story. Aumet is one of the more commercially mature AI-enabled health supply-chain platforms in the region with credible transaction metrics. Reinforces healthcare procurement as an AI vertical with regional scale.",
       "credibility": "High",
       "recency_bucket": "2026-current",
       "recommended_action": "keep_live",
       "event_date": "2026-05-13",
       "id": "wb2026_016"
-    },
-    {
-      "date": "2026-05-04",
-      "headline": "Dubai launches two-year private-sector Agentic AI transformation programme",
-      "country": "UAE",
-      "summary": "Dubai launched a two-year Agentic AI transformation programme for the private sector, with specialized training tracks for all Dubai Chamber business councils, incubators for agentic-AI companies, dedicated funds, and a two-year transformation horizon. The programme converts the UAE's agentic AI agenda from a government-services target into a private-sector operating model push.",
-      "significance": "High",
-      "sources": [
-        "https://gulfnews.com/uae/government/dubai-rolls-out-two-year-agentic-ai-transformation-programme-for-businesses-1.500528652",
-        "https://www.mitsloanme.com/article/dubai-moves-to-embed-agentic-ai-across-private-sector-operations/"
-      ],
-      "rank": 7,
-      "why_it_matters": "Pushes AI from public ambition into commercial execution. Combined with the May 20 federal AI-agent launches, this makes Agentic AI the dominant UAE deployment theme across both government and private sector.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-05-04",
-      "id": "wb2026_017"
     },
     {
       "date": "2026-05-11",
@@ -187,7 +570,7 @@
       "sources": [
         "https://www.globenewswire.com/news-release/2026/05/11/3291848/0/en/lyrie-completes-2-million-preseed-round-to-build-the-security-layer-for-the-ai-agent-era.html"
       ],
-      "rank": 8,
+      "rank": 30,
       "why_it_matters": "Agent identity and authorization become control-plane requirements as the UAE moves AI agents from copilots to executors. Signals 'agent security infrastructure' as an investable GCC category aligned to the federal agentic-AI rollout.",
       "credibility": "Medium-High",
       "recency_bucket": "2026-current",
@@ -206,7 +589,7 @@
         "https://www.scenenow.com/News/Saudi-Authority-Issues-Deepfake-Guidelines-to-Address-AI-Risks",
         "https://istitlaa.ncc.gov.sa/en/transportation/ndmo/deepfakesguidelines/Documents/SDAIA_Deepfakes%20Guidelines.pdf"
       ],
-      "rank": 9,
+      "rank": 31,
       "why_it_matters": "Material commercial AI deployment compliance requirement, not just a policy headline. Affects synthetic-media developers and deployers across multiple sectors. Treat as 2026-current resurfaced active compliance item; not a wholly new 2026 policy.",
       "credibility": "High",
       "recency_bucket": "2026-current",
@@ -215,21 +598,57 @@
       "id": "wb2026_019"
     },
     {
-      "date": "2026-05-21",
-      "headline": "Korn Ferry: 9 in 10 Gulf organizations use AI but only 1% are fully equipped to scale",
-      "country": "GCC",
-      "summary": "A Korn Ferry regional survey reported by Consultancy-me found more than 9 in 10 Gulf organizations apply AI in some form; 49% are piloting in selected functions; 28% remain in exploration; only 1% are fully equipped to adopt AI at scale. Barriers cited: technology integration (61%), talent gaps (44%), ROI uncertainty (37%).",
-      "significance": "Medium",
+      "date": "2026-05-07",
+      "headline": "Aramco commits $372.5M to upstream supercomputing with solutions by stc — 7x current upstream compute capacity",
+      "country": "Saudi Arabia",
+      "summary": "Aramco signed a $372.5 million supercomputing deployment with solutions by stc for upstream energy AI/HPC workloads. Described as Aramco's largest-ever computing infrastructure deployment, the system is expected to provide approximately 7x current upstream computing capacity for seismic data processing, reservoir modeling and simulation. Delivery targeted for early 2027.",
+      "significance": "High",
       "sources": [
-        "https://www.consultancy-me.com/news/13520/gulf-organisations-race-ahead-on-ai-adoption-but-scaling-and-workforce-gaps-persist"
+        "https://www.mitsloanme.com/article/saudi-aramco-bets-372-5m-on-supercomputing-for-hydrocarbon-discovery/"
       ],
-      "rank": 10,
-      "why_it_matters": "Clearest demand-side counterweight to headline announcements. Suggests significant services/integration opportunity but warns much commercial AI activity is still pre-scale. Should influence demand narrative and adoption-stage scoring rather than be counted as company-level deployment.",
+      "rank": 32,
+      "why_it_matters": "Scaled industrial AI/HPC adoption signal in the energy sector — not a public-sector AI initiative. Moves stc solutions from telecom/IT services into mission-critical AI/HPC infrastructure and reframes Aramco's compute footprint at industrial scale.",
       "credibility": "Medium-High",
       "recency_bucket": "2026-current",
       "recommended_action": "keep_live",
-      "event_date": "2026-05-21",
-      "id": "wb2026_020"
+      "event_date": "2026-05-07",
+      "id": "wb2026_015"
+    },
+    {
+      "date": "2026-05-04",
+      "headline": "Dubai launches two-year private-sector Agentic AI transformation programme",
+      "country": "UAE",
+      "summary": "Dubai launched a two-year Agentic AI transformation programme for the private sector, with specialized training tracks for all Dubai Chamber business councils, incubators for agentic-AI companies, dedicated funds, and a two-year transformation horizon. The programme converts the UAE's agentic AI agenda from a government-services target into a private-sector operating model push.",
+      "significance": "High",
+      "sources": [
+        "https://gulfnews.com/uae/government/dubai-rolls-out-two-year-agentic-ai-transformation-programme-for-businesses-1.500528652",
+        "https://www.mitsloanme.com/article/dubai-moves-to-embed-agentic-ai-across-private-sector-operations/"
+      ],
+      "rank": 33,
+      "why_it_matters": "Pushes AI from public ambition into commercial execution. Combined with the May 20 federal AI-agent launches, this makes Agentic AI the dominant UAE deployment theme across both government and private sector.",
+      "credibility": "High",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-05-04",
+      "id": "wb2026_017"
+    },
+    {
+      "id": "wb2026_008",
+      "date": "2026-05-01",
+      "headline": "Oman establishes Royal Decree AI Special Zone in Muscat — May 2026",
+      "country": "Oman",
+      "summary": "Sultan Haitham bin Tarik issued Royal Decree No. 50/2026 (April 30, 2026; published in Official Gazette May 3, 2026) establishing an Artificial Intelligence Special Zone in the Governorate of Muscat. The Public Authority for Special Economic Zones and Free Zones will appoint the managing party. AI projects in the zone will receive incentives, privileges, and exemptions per Royal Decree 38/2025 on Special Economic Zones. This is Oman's most concrete structural commitment to AI beyond strategic plans.",
+      "significance": "Low",
+      "sources": [
+        "https://decree.om/2026/rd20260050/",
+        "https://gulfnews.com/world/gulf/oman/oman-establishes-ai-special-zone-in-muscat-1.500525462"
+      ],
+      "rank": 34,
+      "why_it_matters": "Oman's AI Special Zone decree provides a regulatory and fiscal framework that could attract international AI infrastructure and services providers. For Gulf AI watchers, it signals Oman transitioning from AI strategy documents to executable investment instruments — the same path Bahrain took with its cloud-first 2017 decree.",
+      "credibility": "High — Official Royal Decree published in Oman's Official Gazette (Gazette 1646, May 3 2026). Confirmed by Gulf News, SaudiGulf Projects, and decree.om primary source.",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-05-01"
     },
     {
       "id": "wb2026_001",
@@ -242,12 +661,50 @@
         "https://www.ndtv.com/world-news/ai-to-run-50-of-uae-government-services-by-2028-in-global-first-11408375",
         "https://www.foxnews.com/tech/united-arab-emirates-plans-ai-run-government-within-two-years"
       ],
-      "rank": 11,
+      "rank": 35,
       "why_it_matters": "This is the world's most ambitious government AI deployment commitment ever made at this scale. If executed, it would create GCC's largest government AI procurement market and validate UAE as the global benchmark for sovereign AI governance. For vendors: immediate certification-to-win opportunity. For competitors: Saudi, Qatar face strategic pressure to match.",
       "credibility": "High — official statement by UAE PM, covered by NDTV, Fox News, Bitcoin.com, LinkedIn government posts. Consistent with UAE's track record of executing AI-first government mandates.",
       "recency_bucket": "2026-current",
       "recommended_action": "keep_live",
       "event_date": "2026-04-25"
+    },
+    {
+      "id": "wb2026_003",
+      "date": "2026-04-20",
+      "headline": "Stargate UAE 200MW first phase on track for Q3 2026; 5,000 workers on site",
+      "country": "UAE",
+      "summary": "G42 (via Khazna Data Centers) confirmed that the 200MW first phase of the Stargate UAE 1GW AI campus in Abu Dhabi is on track for delivery in Q3 2026. Construction metrics: 5,000 workers deployed, 100,000+ cubic metres of concrete poured, steelwork weighing 1.5x Eiffel Tower. All long-lead equipment procured; first mechanical system deliveries on site. Full campus: 19.2 sq km (9x size of Monaco), 5GW total. G42 CEO Peng Xiao also confirmed progress in April 2026 Bloomberg interview. Partners: OpenAI, Oracle, NVIDIA, Cisco, SoftBank.",
+      "significance": "High",
+      "sources": [
+        "https://www.digitaldubai.ai/dubai-updates/stargate-uae-g42-ai-infrastructure-cluster-200mw-first-phase-2026",
+        "https://www.bloomberg.com/news/articles/2026-04-09/uae-s-g42-ai-champion-pushes-on-with-data-center-for-openai",
+        "https://www.thenationalnews.com/business/2025/12/05/stargate-uaes-first-phase-to-be-completed-in-third-quarter-of-2026/"
+      ],
+      "rank": 36,
+      "why_it_matters": "Stargate UAE's Q3 2026 delivery is the most commercially significant AI infrastructure milestone in GCC history. First hyperscale AI campus outside the US, anchoring OpenAI's international strategy. 200MW operational means immediate AI services available to MENA enterprises at scale — a transformative shift from 'announced' to 'live'.",
+      "credibility": "High — confirmed by Mubadala CEO Khaldoon Al Mubarak at Milken Institute MENA Summit (Dec 2025), reconfirmed by Digital Dubai AI (Apr 2026), Bloomberg April 2026. Construction progress independently verifiable.",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-04-20"
+    },
+    {
+      "id": "wb2026_009",
+      "date": "2026-03-11",
+      "headline": "Iran conflict triggers AWS outages in UAE/Bahrain; tech companies reassess Gulf AI risk",
+      "country": "Multiple (UAE, Bahrain, Saudi Arabia)",
+      "summary": "A joint US-Israeli military operation against Iran in late February 2026 triggered Iranian retaliatory strikes across the Arabian Peninsula, targeting military bases and digital infrastructure. AWS facilities in UAE and Bahrain experienced outages affecting banking, payments, and enterprise services. Iran issued threats specifically against seven named US tech companies' infrastructure (Microsoft, Google, Palantir, NVIDIA, IBM, Oracle, AWS). Hyperscalers are developing contingency plans — data centers are now considered 'legitimate targets in modern armed conflicts'. Some operators, such as Pure Data Centre Group, are slowing Gulf expansion pace. No announced withdrawal of major AI infrastructure commitments as of May 2026.",
+      "significance": "Low",
+      "sources": [
+        "https://www.cnbc.com/2026/03/11/iran-war-hyperscalers-huge-middle-east-ai-data-center-plans.html",
+        "https://www.nytimes.com/2026/03/13/technology/amazon-google-persian-gulf-war.html",
+        "https://www.politico.com/newsletters/digital-future-daily/2026/03/23/iran-war-complicates-us-push-to-export-ai-to-persian-gulf-00840344"
+      ],
+      "rank": 37,
+      "why_it_matters": "This is the most significant risk event for GCC AI infrastructure since the dataset's creation. Data centers as military targets fundamentally changes risk calculus for hyperscalers. A ceasefire was announced April 8, 2026 (2-week duration). If conflict resumes, next-wave compute capacity may shift to India, Northern Europe, or Southeast Asia. Existing committed capital (HUMAIN, Stargate UAE) is too large to relocate.",
+      "credibility": "High — CNBC (Mar 11, 2026) with named executive quotes. Politico (Mar 23, 2026) confirmed Iran war context for US AI Gulf export policy. Note: the conflict scenario emerged from multiple credible sources; however, full details of casualties and ongoing status require monitoring.",
+      "recency_bucket": "2026-current",
+      "recommended_action": "keep_live",
+      "event_date": "2026-03-11"
     },
     {
       "id": "wb2026_002",
@@ -262,7 +719,7 @@
         "https://digitalpolicyalert.org/change/19003-responsible-ai-policy",
         "https://accesspartnership.com/opinion/saudi-arabia-moves-to-operationalise-responsible-ai-governance/"
       ],
-      "rank": 12,
+      "rank": 38,
       "why_it_matters": "2026 Year of AI designation is the capstone of Saudi's transition from AI aspiration to AI execution. The combination of regulatory consultation, landmark infrastructure opening, and fiscal milestone ($9.1B raised) confirms Saudi Arabia is the GCC's AI-first sovereign economy in 2026.",
       "credibility": "High — official Saudi Cabinet designation, SDAIA confirmed by Digital Policy Alert and Access Partnership, Hexagon Data Center confirmed by multiple sources including w.media, LinkedIn SDAIA posts. $9.1B figure from MIT Sloan Management Review Middle East citing SDAIA data.",
       "recency_bucket": "2026-current",
@@ -270,42 +727,21 @@
       "event_date": "2026-03-01"
     },
     {
-      "id": "wb2026_003",
-      "date": "2026-04-20",
-      "headline": "Stargate UAE 200MW first phase on track for Q3 2026; 5,000 workers on site",
-      "country": "UAE",
-      "summary": "G42 (via Khazna Data Centers) confirmed that the 200MW first phase of the Stargate UAE 1GW AI campus in Abu Dhabi is on track for delivery in Q3 2026. Construction metrics: 5,000 workers deployed, 100,000+ cubic metres of concrete poured, steelwork weighing 1.5x Eiffel Tower. All long-lead equipment procured; first mechanical system deliveries on site. Full campus: 19.2 sq km (9x size of Monaco), 5GW total. G42 CEO Peng Xiao also confirmed progress in April 2026 Bloomberg interview. Partners: OpenAI, Oracle, NVIDIA, Cisco, SoftBank.",
-      "significance": "High",
-      "sources": [
-        "https://www.digitaldubai.ai/dubai-updates/stargate-uae-g42-ai-infrastructure-cluster-200mw-first-phase-2026",
-        "https://www.bloomberg.com/news/articles/2026-04-09/uae-s-g42-ai-champion-pushes-on-with-data-center-for-openai",
-        "https://www.thenationalnews.com/business/2025/12/05/stargate-uaes-first-phase-to-be-completed-in-third-quarter-of-2026/"
-      ],
-      "rank": 13,
-      "why_it_matters": "Stargate UAE's Q3 2026 delivery is the most commercially significant AI infrastructure milestone in GCC history. First hyperscale AI campus outside the US, anchoring OpenAI's international strategy. 200MW operational means immediate AI services available to MENA enterprises at scale — a transformative shift from 'announced' to 'live'.",
-      "credibility": "High — confirmed by Mubadala CEO Khaldoon Al Mubarak at Milken Institute MENA Summit (Dec 2025), reconfirmed by Digital Dubai AI (Apr 2026), Bloomberg April 2026. Construction progress independently verifiable.",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-04-20"
-    },
-    {
-      "id": "wb2026_004",
-      "date": "2026-01-05",
-      "headline": "HUMAIN receives first NVIDIA GPU shipment; Riyadh and Dammam datacenters targeting Q2 2026",
+      "id": "wb2026_007",
+      "date": "2026-02-19",
+      "headline": "HUMAIN invests $3B in xAI Series E; deepens Grok infrastructure partnership",
       "country": "Saudi Arabia",
-      "summary": "HUMAIN confirmed receipt of its first shipment of advanced NVIDIA GB300 AI GPUs in January 2026, following the November 2025 expanded partnership (600,000 GPU target over 3 years). HUMAIN's Riyadh and Dammam facilities — each with initial capacity up to 100MW — were targeting Q2 2026 operational launch. Separately in January, HUMAIN secured up to $1.2B in financing at Davos (announced with Infra/NDF) for 250MW of dedicated AI data center capacity, with expansion potential to 1GW+.",
+      "summary": "HUMAIN participated in xAI's Series E funding round with a $3 billion investment, per CNBC (Feb 19, 2026). This extends and deepens the 500MW data center partnership announced at the November 2025 US-Saudi Investment Forum. HUMAIN is now both an infrastructure host and an equity investor in xAI, whose Grok model is expected to be deployed from Saudi infrastructure and potentially branded as HUMAIN Chat. Saudi Arabia's $9.1B total AI company funding includes this xAI investment.",
       "significance": "Medium",
       "sources": [
-        "https://www.samenacouncil.org/samena_daily_news?news=108917",
-        "https://www.reuters.com/world/middle-east/saudis-humain-secures-up-12-bln-expand-ai-infrastructure-2026-01-21/",
-        "https://news.microsoft.com/source/emea/2026/02/microsoft-confirms-saudi-arabia-datacenter-region-available-for-customers-to-run-cloud-workloads-from-q4-2026/"
+        "https://www.cnbc.com/2026/02/19/saudis-humain-invested-3-billion-in-xais-series-e-funding-round.html"
       ],
-      "rank": 14,
-      "why_it_matters": "GPU delivery confirmation converts announced partnerships into physical AI infrastructure. Q2 2026 Riyadh/Dammam launch means Saudi sovereign AI compute becomes available to domestic enterprises for the first time — the enabling layer for ALLAM deployment and enterprise AI services. $1.2B Davos financing demonstrates institutional investor confidence.",
-      "credibility": "High — GPU delivery confirmed by SAMENA Council citing HUMAIN CEO Tareq Amin. Financing announced at Davos per Reuters (Jan 21, 2026). Facility timeline per Bloomberg (Aug 2025) and reconfirmed in multiple 2026 sources.",
+      "rank": 39,
+      "why_it_matters": "A sovereign-backed AI company investing $3B into a frontier AI lab (not just hosting its compute) is a strategic escalation: HUMAIN acquires model access, board influence, and commercial relationship depth with Grok. Combined with HUMAIN's equity in Luma AI (~$900M acquired in late 2025), Saudi Arabia is building a portfolio of AI lab stakes alongside compute infrastructure.",
+      "credibility": "High — CNBC (Feb 19, 2026) direct reporting. Consistent with November 2025 public partnership announcement between xAI and HUMAIN.",
       "recency_bucket": "2026-current",
       "recommended_action": "keep_live",
-      "event_date": "2026-01-05"
+      "event_date": "2026-02-19"
     },
     {
       "id": "wb2026_005",
@@ -318,7 +754,7 @@
         "https://www.bloomberg.com/news/articles/2026-02-17/openai-anthropic-deals-power-abu-dhabi-s-100-billion-ai-bet",
         "https://www.thenationalnews.com/future/technology/2026/02/13/mgx-anthropic-investment-ai/"
       ],
-      "rank": 15,
+      "rank": 40,
       "why_it_matters": "MGX's simultaneous stake in OpenAI, Anthropic, and xAI is unprecedented for any sovereign or financial entity. This gives Abu Dhabi unique leverage over the global AI frontier, access to model APIs and partnerships ahead of public availability, and positions the UAE as a necessary partner for AI companies seeking Gulf capital. Strongest validation yet that the Gulf-AI investment thesis is commercially sound.",
       "credibility": "High — Bloomberg (Feb 17), The National (Feb 12), MGX LinkedIn confirmed co-lead role. Previously flagged as discussions only in 2025 seed dataset; now verified closed.",
       "recency_bucket": "2026-current",
@@ -336,66 +772,12 @@
         "https://news.microsoft.com/source/emea/2026/02/microsoft-confirms-saudi-arabia-datacenter-region-available-for-customers-to-run-cloud-workloads-from-q4-2026/",
         "https://news.microsoft.com/source/emea/2026/02/microsoft-accelerates-ai-skilling-in-saudi-arabia-helping-3-million-people-acquire-ai-skills-by-2030/"
       ],
-      "rank": 16,
+      "rank": 41,
       "why_it_matters": "Microsoft Azure launch in Saudi Arabia removes the final barrier for regulated industries (banking, government, healthcare) to run Microsoft AI workloads with full PDPL data residency compliance. SAP, IBM, Oracle, and enterprise software vendors in Saudi Arabia all face increased competition from Azure-native AI tooling post-Q4 2026.",
       "credibility": "High — Official Microsoft press release from news.microsoft.com/source/emea, confirmed by Minister of Communications and Information Technology.",
       "recency_bucket": "2026-current",
       "recommended_action": "keep_live",
       "event_date": "2026-02-10"
-    },
-    {
-      "id": "wb2026_007",
-      "date": "2026-02-19",
-      "headline": "HUMAIN invests $3B in xAI Series E; deepens Grok infrastructure partnership",
-      "country": "Saudi Arabia",
-      "summary": "HUMAIN participated in xAI's Series E funding round with a $3 billion investment, per CNBC (Feb 19, 2026). This extends and deepens the 500MW data center partnership announced at the November 2025 US-Saudi Investment Forum. HUMAIN is now both an infrastructure host and an equity investor in xAI, whose Grok model is expected to be deployed from Saudi infrastructure and potentially branded as HUMAIN Chat. Saudi Arabia's $9.1B total AI company funding includes this xAI investment.",
-      "significance": "Medium",
-      "sources": [
-        "https://www.cnbc.com/2026/02/19/saudis-humain-invested-3-billion-in-xais-series-e-funding-round.html"
-      ],
-      "rank": 17,
-      "why_it_matters": "A sovereign-backed AI company investing $3B into a frontier AI lab (not just hosting its compute) is a strategic escalation: HUMAIN acquires model access, board influence, and commercial relationship depth with Grok. Combined with HUMAIN's equity in Luma AI (~$900M acquired in late 2025), Saudi Arabia is building a portfolio of AI lab stakes alongside compute infrastructure.",
-      "credibility": "High — CNBC (Feb 19, 2026) direct reporting. Consistent with November 2025 public partnership announcement between xAI and HUMAIN.",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-02-19"
-    },
-    {
-      "id": "wb2026_008",
-      "date": "2026-05-01",
-      "headline": "Oman establishes Royal Decree AI Special Zone in Muscat — May 2026",
-      "country": "Oman",
-      "summary": "Sultan Haitham bin Tarik issued Royal Decree No. 50/2026 (April 30, 2026; published in Official Gazette May 3, 2026) establishing an Artificial Intelligence Special Zone in the Governorate of Muscat. The Public Authority for Special Economic Zones and Free Zones will appoint the managing party. AI projects in the zone will receive incentives, privileges, and exemptions per Royal Decree 38/2025 on Special Economic Zones. This is Oman's most concrete structural commitment to AI beyond strategic plans.",
-      "significance": "Low",
-      "sources": [
-        "https://decree.om/2026/rd20260050/",
-        "https://gulfnews.com/world/gulf/oman/oman-establishes-ai-special-zone-in-muscat-1.500525462"
-      ],
-      "rank": 18,
-      "why_it_matters": "Oman's AI Special Zone decree provides a regulatory and fiscal framework that could attract international AI infrastructure and services providers. For Gulf AI watchers, it signals Oman transitioning from AI strategy documents to executable investment instruments — the same path Bahrain took with its cloud-first 2017 decree.",
-      "credibility": "High — Official Royal Decree published in Oman's Official Gazette (Gazette 1646, May 3 2026). Confirmed by Gulf News, SaudiGulf Projects, and decree.om primary source.",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-05-01"
-    },
-    {
-      "id": "wb2026_009",
-      "date": "2026-03-11",
-      "headline": "Iran conflict triggers AWS outages in UAE/Bahrain; tech companies reassess Gulf AI risk",
-      "country": "Multiple (UAE, Bahrain, Saudi Arabia)",
-      "summary": "A joint US-Israeli military operation against Iran in late February 2026 triggered Iranian retaliatory strikes across the Arabian Peninsula, targeting military bases and digital infrastructure. AWS facilities in UAE and Bahrain experienced outages affecting banking, payments, and enterprise services. Iran issued threats specifically against seven named US tech companies' infrastructure (Microsoft, Google, Palantir, NVIDIA, IBM, Oracle, AWS). Hyperscalers are developing contingency plans — data centers are now considered 'legitimate targets in modern armed conflicts'. Some operators, such as Pure Data Centre Group, are slowing Gulf expansion pace. No announced withdrawal of major AI infrastructure commitments as of May 2026.",
-      "significance": "Low",
-      "sources": [
-        "https://www.cnbc.com/2026/03/11/iran-war-hyperscalers-huge-middle-east-ai-data-center-plans.html",
-        "https://www.nytimes.com/2026/03/13/technology/amazon-google-persian-gulf-war.html",
-        "https://www.politico.com/newsletters/digital-future-daily/2026/03/23/iran-war-complicates-us-push-to-export-ai-to-persian-gulf-00840344"
-      ],
-      "rank": 19,
-      "why_it_matters": "This is the most significant risk event for GCC AI infrastructure since the dataset's creation. Data centers as military targets fundamentally changes risk calculus for hyperscalers. A ceasefire was announced April 8, 2026 (2-week duration). If conflict resumes, next-wave compute capacity may shift to India, Northern Europe, or Southeast Asia. Existing committed capital (HUMAIN, Stargate UAE) is too large to relocate.",
-      "credibility": "High — CNBC (Mar 11, 2026) with named executive quotes. Politico (Mar 23, 2026) confirmed Iran war context for US AI Gulf export policy. Note: the conflict scenario emerged from multiple credible sources; however, full details of casualties and ongoing status require monitoring.",
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "event_date": "2026-03-11"
     },
     {
       "id": "wb2026_010",
@@ -408,7 +790,7 @@
         "https://qatar.websummit.com/summaries/qat26/building-human-systems-how-qai-is-building-ai-infrastructure-systems-nationally-and-globally/",
         "https://bam.brookfield.com/press-releases/brookfield-and-qai-form-20-billion-strategic-investment-partnership-ai"
       ],
-      "rank": 20,
+      "rank": 42,
       "why_it_matters": "Qai's public emergence at Web Summit Qatar confirms it is operational, not just announced. The compute credit fund for Doha startups mirrors Abu Dhabi's Hub71/Falcon model — Qatar is building a startup AI ecosystem with sovereign capital as the anchor. No hyperscaler region in Qatar yet (as of Q1 2026) means the Integrated Compute Center will be critical for early-mover enterprise adoption.",
       "credibility": "High — Web Summit Qatar official summary, confirmed by Brookfield press release (primary source Dec 9, 2025), Qatar launches confirmed across The National, abhs.in analysis.",
       "recency_bucket": "2026-current",
@@ -416,403 +798,23 @@
       "event_date": "2026-02-02"
     },
     {
-      "id": "wb2026_021",
-      "date": "2026-07-06",
-      "event_date": "2026-07-06",
-      "headline": "Inception42 (G42) and Microsoft launch agentic AI collaboration for GCC governments and enterprises",
-      "country": "UAE",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 1,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "G42's rebranded AI arm Inception42 and Microsoft announced a collaboration on 2026-07-06 to accelerate agentic AI adoption across governments and enterprises in the UAE, pairing Inception42's sovereign-layer models with Microsoft's agentic stack and interoperability tooling.",
-      "why_it_matters": "The freshest item in the July window ties a UAE sovereign AI champion to Microsoft's agentic platform, signalling that the region's agentic-government push now has a named hyperscaler execution partner.",
-      "sources": [
-        "https://economymiddleeast.com/news/g42s-inception42-microsoft-advance-agentic-ai-adoption-governments-enterprises/"
-      ]
-    },
-    {
-      "id": "wb2026_022",
-      "date": "2026-06-14",
-      "event_date": "2026-06-14",
-      "headline": "UAE establishes federal Artificial Intelligence and Data Authority",
-      "country": "UAE",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 2,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "By decree of Sheikh Mohammed bin Rashid on 2026-06-14, the UAE established a federal Artificial Intelligence and Data Authority consolidating the AI Office, TDRA functions and the federal Data Office, chaired by Omar Al Olama. It is the most significant GCC AI-governance structural change of the window.",
-      "why_it_matters": "Consolidating AI, telecom-regulatory and data mandates into one federal authority moves the UAE from distributed AI policy to a single accountable governance structure that will shape procurement, data residency and agentic-service rules.",
-      "sources": [
-        "https://www.thenationalnews.com/news/uae/2026/06/14/uae-unveils-ai-and-data-authority-to-create-faster-and-smarter-government/",
-        "https://www.morganlewis.com/pubs/2026/06/uae-establishes-federal-authority-for-artificial-intelligence-and-data"
-      ]
-    },
-    {
-      "id": "wb2026_023",
-      "date": "2026-06-28",
-      "event_date": "2026-06-28",
-      "headline": "HUMAIN breaks ground on Riyadh and Dammam AI data centers; first facilities target Q2 2026 go-live",
+      "id": "wb2026_004",
+      "date": "2026-01-05",
+      "headline": "HUMAIN receives first NVIDIA GPU shipment; Riyadh and Dammam datacenters targeting Q2 2026",
       "country": "Saudi Arabia",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 3,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "HUMAIN broke ground on two AI data centers (Riyadh and Dammam, 100MW each initial) with a multi-vendor stack spanning AWS (a $5bn AI Zone), AMD and Cisco (1GW over five years), Groq and Qualcomm, and up to 35,000 GB300 GPUs approved. First facilities are expected to go live in Q2 2026.",
-      "why_it_matters": "Saudi sovereign compute moved from MoUs to physical groundbreakings with a genuinely multi-vendor stack, marking the KSA sovereign-AI thesis as execution-stage rather than intent-stage.",
+      "summary": "HUMAIN confirmed receipt of its first shipment of advanced NVIDIA GB300 AI GPUs in January 2026, following the November 2025 expanded partnership (600,000 GPU target over 3 years). HUMAIN's Riyadh and Dammam facilities — each with initial capacity up to 100MW — were targeting Q2 2026 operational launch. Separately in January, HUMAIN secured up to $1.2B in financing at Davos (announced with Infra/NDF) for 250MW of dedicated AI data center capacity, with expansion potential to 1GW+.",
+      "significance": "Medium",
       "sources": [
-        "https://www.datacenterdynamics.com/en/news/humain-breaks-ground-two-data-centers-with-first-facilities-expected-to-go-live-in-q2-2026/"
-      ]
-    },
-    {
-      "id": "wb2026_024",
-      "date": "2026-06-28",
-      "event_date": "2026-06-28",
-      "headline": "xAI and HUMAIN to build 500MW Saudi data center; Grok deployed countrywide",
-      "country": "Saudi Arabia",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 4,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "Announced at the US-Saudi Investment Forum, xAI and HUMAIN will build a 500MW Saudi data center with Grok deployed countrywide and chip shipments approved. It is the first countrywide frontier-LLM deployment delivered via sovereign infrastructure.",
-      "why_it_matters": "A frontier model (Grok) running countrywide on sovereign Saudi infrastructure signals that US-GCC chip and model access is tightening into concrete deployments, not just agreements.",
-      "sources": [
-        "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/"
-      ]
-    },
-    {
-      "id": "wb2026_025",
-      "date": "2026-07-01",
-      "event_date": "2026-07-01",
-      "headline": "Abu Dhabi's MGX closes ~$49bn AI-infrastructure fund",
-      "country": "UAE",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 5,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "MGX closed an AI-infrastructure fund of about $49bn (against a $45bn target), the largest GCC AI-capital vehicle to date and a core instrument of Abu Dhabi's global AI-infrastructure strategy.",
-      "why_it_matters": "A single sovereign-linked vehicle at ~$49bn concentrates enough capital to shape global AI-infrastructure buildout terms, reinforcing GCC sovereign capital as a primary force in the AI supply chain.",
-      "sources": [
-        "https://www.forbes.com/sites/guneyyildiz/2026/07/03/abu-dhabis-49-billion-ai-fund-and-its-sovereign-rivals/",
-        "https://en.sharikatmubasher.com/news/article/21558388/abu-dhabis-mgx-raises-50bn-to-accelerate-spending-on-ai-infrastructure"
-      ]
-    },
-    {
-      "id": "wb2026_026",
-      "date": "2026-06-28",
-      "event_date": "2026-06-28",
-      "headline": "Brookfield launches $100bn AI-infrastructure program with Nvidia and Kuwait Investment Authority as backers",
-      "country": "GCC",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 6,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "Brookfield launched a $100bn AI-infrastructure program securing Nvidia and the Kuwait Investment Authority as backers. It marks the first visible entry of Kuwaiti sovereign capital into the global AI-infrastructure race and deepens GCC sovereign LPs' role as anchors of global AI capital.",
-      "why_it_matters": "KIA's participation brings a historically quieter Gulf sovereign into large-scale AI-infrastructure finance, widening the base of GCC capital shaping global compute buildout.",
-      "sources": [
-        "https://www.datacenterdynamics.com/en/news/brookfield-launches-100bn-ai-infrastructure-fund-secures-nvidia-and-kia-as-backers/"
-      ]
-    },
-    {
-      "id": "wb2026_027",
-      "date": "2026-06-11",
-      "event_date": "2026-06-11",
-      "headline": "UAE targets 50% of federal services on AI agents within two years; launches 90-day sprint across 50 entities",
-      "country": "UAE",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 7,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "The UAE Cabinet approved a target for 50% of federal services to be delivered by AI agents within two years and launched a 90-day agentic AI sprint across 50 federal entities involving more than 300 officials as the execution vehicle.",
-      "why_it_matters": "The 90-day sprint converts the UAE's headline 50% agentic-government target into a time-boxed, entity-by-entity execution program, making agentic adoption trackable across named agencies.",
-      "sources": [
-        "https://abudhabi.news/posts/uae-targets-50-of-services-to-ai-agents-within-two-years",
-        "https://www.middleeastainews.com/p/uae-runs-90-day-ai-sprint-across"
-      ]
-    },
-    {
-      "id": "wb2026_028",
-      "date": "2026-07-01",
-      "event_date": "2026-07-01",
-      "headline": "Oracle to expand Abu Dhabi region with Nvidia Blackwell Supercluster (4,000+ GPUs)",
-      "country": "UAE",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 8,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "Oracle announced expansion of its Abu Dhabi region with the first OCI Nvidia Blackwell Supercluster in the region, comprising more than 4,000 Blackwell GPUs, alongside OCI Enterprise AI going live in UAE Central.",
-      "why_it_matters": "The first regional OCI Blackwell Supercluster gives UAE enterprises frontier-class managed compute locally, strengthening the country's position as a managed enterprise-AI hub.",
-      "sources": [
-        "https://www.datacenterdynamics.com/en/news/oracle-to-expand-abu-dhabi-region-with-nvidia-blackwell-supercluster/",
-        "https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-june-2026"
-      ]
-    },
-    {
-      "id": "wb2026_029",
-      "date": "2026-06-16",
-      "event_date": "2026-06-16",
-      "headline": "CNTXT AI closes $60M Series A and acquires Actualize for Arabic voice agents",
-      "country": "UAE",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 9,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "CNTXT AI closed a $60M Series A (co-led by ai71 and BlueFive) to deploy secure AI infrastructure worldwide and acquired Actualize, an enterprise builder of dialect-aware Arabic voice agents, integrating it into CNTXT AI's Munsit platform. This is the largest fresh AI-specific GCC raise of the window and resolves the June 9 pending acquisition item.",
-      "why_it_matters": "The raise plus acquisition consolidates Arabic-first enterprise voice AI (banking, healthcare, government use cases) under a secure-infrastructure player, a defensible regional AI depth signal.",
-      "sources": [
-        "https://www.wamda.com/ar/2026/06/cntxt-ai-closes-60-million-series-deploy-secure-ai-infrastructure-worldwide",
-        "https://www.wamda.com/2026/06/uae-cntxt-ai-acquires-actualize-expand-enterprise-grade-arabic-ai-agents"
-      ]
-    },
-    {
-      "id": "wb2026_030",
-      "date": "2026-06-30",
-      "event_date": "2026-06-30",
-      "headline": "1001 closes $30M Series A led by Lux Capital to build a sovereign AI OS for the GCC",
-      "country": "GCC",
-      "significance": "High",
-      "credibility": "High",
-      "rank": 10,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "1001 closed a $30M Series A led by Lux Capital with Sanabil (PIF), 9Yards, Hanabi, General Catalyst, CIV and Chris Ré, to build a sovereign AI operating system for critical infrastructure across the GCC.",
-      "why_it_matters": "A top-tier US VC leading a sovereign-AI-OS thesis with PIF's Sanabil participating shows international conviction in GCC sovereign-AI software, not just compute.",
-      "sources": [
-        "https://www.wamda.com/2026/06/1001-closes-30-million-series-a-build-sovereign-ai-gcc"
-      ]
-    },
-    {
-      "id": "wb2026_031",
-      "date": "2026-06-05",
-      "event_date": "2026-06-05",
-      "headline": "du and Open Innovation AI sign MoU for UAE sovereign agentic AI (National Hypercloud + GPU orchestration)",
-      "country": "UAE",
-      "significance": "Medium-High",
-      "credibility": "Medium-High",
-      "rank": 11,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "du and Open Innovation AI signed an MoU, witnessed by the UAE Cyber Security Council, to link du Tech's CSC-certified National Hypercloud with Open Innovation AI's GPU orchestration platform for secure, in-country sovereign agentic AI across government and enterprise. Stage is MoU / opportunity-assessment; no commercial terms, GPU counts or timeline were disclosed (June 9 carry-forward).",
-      "why_it_matters": "It is a practical bridge between sovereign cloud, cybersecurity certification and agentic AI workload orchestration, though it remains assessment-stage until named workloads and metrics appear.",
-      "sources": [
-        "https://www.zawya.com/en/press-release/companies-news/du-and-open-innovation-ai-join-forces-to-power-the-uaes-sovereign-agentic-ai-future-kjkydd4k"
-      ]
-    },
-    {
-      "id": "wb2026_032",
-      "date": "2026-06-01",
-      "event_date": "2026-06-01",
-      "headline": "Positron AI establishes first presence outside the US in Dubai's DIFC",
-      "country": "UAE",
-      "significance": "Medium-High",
-      "credibility": "High",
-      "rank": 12,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "Positron AI established its first presence outside the United States in Dubai's DIFC to support specialized AI inference infrastructure and power-efficient model serving, having raised more than $300M including a $230M Series B. No GCC customer deployment or live in-region capacity is disclosed yet (June 2 carry-forward).",
-      "why_it_matters": "A US inference-hardware specialist choosing DIFC as its first international base reflects the region's shift from GPU accumulation toward efficient inference close to regulated workloads.",
-      "sources": [
-        "https://mediaoffice.ae/en/news/2026/jun/01-06/positron-ai-establishes-first-presence-outside-the"
-      ]
-    },
-    {
-      "id": "wb2026_033",
-      "date": "2026-05-27",
-      "event_date": "2026-05-27",
-      "headline": "RedCloud launches Saudi operations under $30M JV with Kayanat, running FMCG intelligence on Anthropic Claude",
-      "country": "Saudi Arabia",
-      "significance": "Medium-High",
-      "credibility": "Medium-High",
-      "rank": 13,
-      "recency_bucket": "2026-current",
-      "recommended_action": "keep_live",
-      "summary": "RedCloud launched Saudi operations via a $30M, five-year JV with Kayanat to deploy its RAID predictive-intelligence infrastructure for FMCG distribution, built on Anthropic Claude models and RedCloud's $6.9bn FMCG transaction data foundation across Riyadh, Eastern and Western Provinces. Stage is pipeline / operational launch; RedCloud Arabia is pending incorporation with commercial closes expected in 2H 2026 (June 2 carry-forward).",
-      "why_it_matters": "A sector-specific Saudi commercial AI JV combining a local operating partner, a large data asset and Anthropic Claude agent workflows is a clearer adoption signal than generic AI-adoption headlines.",
-      "sources": [
-        "https://www.globenewswire.com/news-release/2026/05/27/3302099/0/en/redcloud-launches-saudi-operations-under-30m-joint-venture-with-kayanat-raid-intelligence-infrastructure-on-anthropic-claude-activates-for-fmcg-deployment-across-kingdom.html"
-      ]
-    },
-    {
-      "id": "wb2026_034",
-      "date": "2026-08-24",
-      "headline": "Mistral × HUMAIN announces hundreds-of-millions-of-Euros strategic collaboration",
-      "country": "Saudi Arabia",
-      "summary": "Mistral and HUMAIN announced a strategic collaboration covering AI infrastructure, model development and localisation, Arabic frontier models, and regional deployment, initially focused on cybersecurity and voice; use of HUMAIN data centres is exploratory and no capacity figures, timeline or customers were disclosed.",
-      "significance": "High",
-      "sources": [
-        "https://mistral.ai/news/mistral-x-humain/",
-        "https://www.prnewswire.com/news-releases/mistral-and-humain-announce-strategic-collaboration-to-advance-sovereign-ai-in-saudi-arabia-and-regionally-302858613.html"
+        "https://www.samenacouncil.org/samena_daily_news?news=108917",
+        "https://www.reuters.com/world/middle-east/saudis-humain-secures-up-12-bln-expand-ai-infrastructure-2026-01-21/",
+        "https://news.microsoft.com/source/emea/2026/02/microsoft-confirms-saudi-arabia-datacenter-region-available-for-customers-to-run-cloud-workloads-from-q4-2026/"
       ],
-      "rank": 1,
-      "why_it_matters": "First declared-scale European frontier-lab anchor into HUMAIN; gives Saudi AI a non-US frontier partner while preserving caveats around execution.",
-      "credibility": "High",
+      "rank": 43,
+      "why_it_matters": "GPU delivery confirmation converts announced partnerships into physical AI infrastructure. Q2 2026 Riyadh/Dammam launch means Saudi sovereign AI compute becomes available to domestic enterprises for the first time — the enabling layer for ALLAM deployment and enterprise AI services. $1.2B Davos financing demonstrates institutional investor confidence.",
+      "credibility": "High — GPU delivery confirmed by SAMENA Council citing HUMAIN CEO Tareq Amin. Financing announced at Davos per Reuters (Jan 21, 2026). Facility timeline per Bloomberg (Aug 2025) and reconfirmed in multiple 2026 sources.",
       "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-24"
-    },
-    {
-      "id": "wb2026_035",
-      "date": "2026-08-09",
-      "headline": "UAE launches federal agentic AI strategic track with 50% two-year conversion target",
-      "country": "UAE",
-      "summary": "The National Committee for the Agentic AI Project convened more than 100 federal officials and launched a strategic track under UAE Government 4.0, tied to a national target to convert 50% of government operations, services and tasks to agentic AI within two years.",
-      "significance": "High",
-      "sources": [
-        "https://www.wam.ae/en/article/c1nbi33-uae-advances-integration-agentic-across-federal"
-      ],
-      "rank": 2,
-      "why_it_matters": "Largest quantified public-sector AI demand commitment in the GCC; turns agentic AI into a dated procurement clock.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-09"
-    },
-    {
-      "id": "wb2026_036",
-      "date": "2026-08-12",
-      "headline": "Saudi text-and-data-mining exception takes effect",
-      "country": "Saudi Arabia",
-      "summary": "Saudi Arabia’s copyright text-and-data-mining exception took effect on 12 August 2026, permitting reproduction of lawfully published works for AI development within statutory limits.",
-      "significance": "High",
-      "sources": [
-        "https://www.modulos.ai/middle-east-ai-regulations/",
-        "https://utmps.com/saudi-arabias-new-copyright-law-key-changes-and-implications/"
-      ],
-      "rank": 3,
-      "why_it_matters": "Creates a legal training-workload advantage for in-Kingdom model development.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-12"
-    },
-    {
-      "id": "wb2026_037",
-      "date": "2026-08-09",
-      "headline": "Kuwait creates standalone AI services licence code 620106",
-      "country": "Kuwait",
-      "summary": "Ministerial Decision No. 159 of 2026, supervised by CITRA and published in Kuwait Al-Youm Issue 1803, makes artificial intelligence services and solutions a standalone licensable activity under international code 620106.",
-      "significance": "High",
-      "sources": [
-        "https://www.wefaqlaw.com/en/blog/kuwait-gives-artificial-intelligence-its-own-licence-what-technology-businesses-should-do-now"
-      ],
-      "rank": 4,
-      "why_it_matters": "First GCC market-access gate specifically for who may sell AI services and solutions.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-09"
-    },
-    {
-      "id": "wb2026_038",
-      "date": "2026-08-17",
-      "headline": "OpenAI inference residency is live in the UAE",
-      "country": "UAE",
-      "summary": "OpenAI lists the UAE as one of only three global inference-residency regions alongside Europe and the United States, with local inference for eligible customers and feature/model constraints noted.",
-      "significance": "High",
-      "sources": [
-        "https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt"
-      ],
-      "rank": 5,
-      "why_it_matters": "Materially lowers the sovereignty objection to OpenAI for UAE government and regulated buyers.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-17"
-    },
-    {
-      "id": "wb2026_039",
-      "date": "2026-08-14",
-      "headline": "Saudi data-centre financing gap quantified",
-      "country": "Saudi Arabia",
-      "summary": "Alvarez & Marsal analysis puts installed Saudi capacity near 410MW IT load, a 2030 base case around 1GW, and announced delivery around 2.5–3GW, implying $21–33bn of announced capex may not be financeable on current lender capacity.",
-      "significance": "Medium-High",
-      "sources": [
-        "https://www.consultancy-me.com/news/14033/the-financing-challenge-behind-saudi-arabias-data-center-boom"
-      ],
-      "rank": 6,
-      "why_it_matters": "Reframes compute scale as a debt-capacity problem, not only a chip-supply problem.",
-      "credibility": "Medium-High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-14"
-    },
-    {
-      "id": "wb2026_040",
-      "date": "2026-08-17",
-      "headline": "e& embeds agentic AI and AI licences into core business connectivity plans",
-      "country": "UAE",
-      "summary": "e& UAE launched agentic AI in core mobile and fixed business plans and Business Pro AI bundles Aleria Lite, Microsoft 365 Copilot, or both as an AI Licence managed through e&.",
-      "significance": "High",
-      "sources": [
-        "https://www.eand.com/en/news/17-08-26-eand-agentic-ai-core-connectivity.html",
-        "https://www.eand.ae/en/smb/products/fixed-services/business-internet.html"
-      ],
-      "rank": 7,
-      "why_it_matters": "Turns AI adoption for SMEs into a connectivity SKU and links telco distribution with sovereign compute and Western productivity AI.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-17"
-    },
-    {
-      "id": "wb2026_041",
-      "date": "2026-08-05",
-      "headline": "NEOM Oxagon 1.5GW AI campus enters construction path",
-      "country": "Saudi Arabia",
-      "summary": "DataVolt’s NEOM Oxagon AI data-centre campus is described at 1.5GW, with phase 1 funded from an initial $5bn investment and construction expected within 2–3 months from 5 August 2026.",
-      "significance": "High",
-      "sources": [
-        "https://www.agbi.com/tech/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/"
-      ],
-      "rank": 8,
-      "why_it_matters": "One of the mega-scale Saudi compute announcements is moving toward physical construction.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-05"
-    },
-    {
-      "id": "wb2026_042",
-      "date": "2026-08-22",
-      "headline": "Oman establishes AI Special Economic Zone under Royal Decree No. 50/2026",
-      "country": "Oman",
-      "summary": "Oman created an AI Special Economic Zone near Muscat International Airport at RO 106m across three phases and about 104,000 sqm, with phase-1 construction expected in Q4 2027.",
-      "significance": "High",
-      "sources": [
-        "https://www.omanobserver.om/ampArticle/1194910"
-      ],
-      "rank": 9,
-      "why_it_matters": "Oman’s AI positioning moved from strategy to a legally instantiated zone.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-22"
-    },
-    {
-      "id": "wb2026_043",
-      "date": "2026-08-06",
-      "headline": "Ooredoo leads roughly $800m Zankore investment in Indonesia",
-      "country": "Qatar / outbound",
-      "summary": "Ooredoo committed roughly $800m for 49% of Zankore, a 1GW-target NVIDIA DSX AI Factory platform in Indonesia, with about 200MW targeted in H1 2027 and about $600m five-year cumulative EBITDA indicated.",
-      "significance": "High",
-      "sources": [
-        "https://www.reuters.com/business/media-telecom/qatars-ooredoo-leads-800-million-investment-ai-platform-zankore-2026-08-06/"
-      ],
-      "rank": 10,
-      "why_it_matters": "A major Gulf-capital compute move, but outbound and excluded from domestic GCC compute totals.",
-      "credibility": "High",
-      "recency_bucket": "2026-current",
-      "recommended_action": "add_live",
-      "event_date": "2026-08-06"
+      "recommended_action": "keep_live",
+      "event_date": "2026-01-05"
     }
   ],
   "market_metrics": [
